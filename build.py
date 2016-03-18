@@ -2,8 +2,8 @@ import urllib.request
 import yaml
 import os
 
-prefix = ".gh-"
-background = "bc"
+prefix = ".g-"
+background = "bg"
 color = "c"
 
 replace_names = {
@@ -23,6 +23,6 @@ colors = dict((replace_names.get(name, name), color['color']) for name, color in
 
 f =  open('colors.css', 'w')
 for key, value in colors.items():
-    f.write(prefix + background + "-" + key.replace(" ", "-") + " { background-color: " + value + "; }\n")
-    f.write(prefix + color + "-" + key.replace(" ", "-") + " { color: " + value + "; }\n")
+    f.write(prefix + background + "-" + key.replace(" ", "-") + " { background-color: " + value + " !important; }\n")
+    f.write(prefix + color + "-" + key.replace(" ", "-") + " { color: " + value + " !important; }\n")
 f.close()

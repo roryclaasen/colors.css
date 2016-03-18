@@ -4,9 +4,9 @@ Colors.css is based off [github language colors](https://github.com/doda/github-
 ### Usage
 To use as background color use prefix
 ```
-.gh-bc-(language)
+.g-bg-(language)
 ```
 To use as color use prefix
 ```
-.gh-c-(language)
+.g-c-(language)
 ```
