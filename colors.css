@@ -1,428 +1,428 @@
-.gh-bc-Max { background-color:#c4a79c; }
-.gh-c-Max { color:#c4a79c; }
-.gh-bc-Oxygene { background-color:#cdd0e3; }
-.gh-c-Oxygene { color:#cdd0e3; }
-.gh-bc-LLVM { background-color:#185619; }
-.gh-c-LLVM { color:#185619; }
-.gh-bc-Oz { background-color:#fab738; }
-.gh-c-Oz { color:#fab738; }
-.gh-bc-ATS { background-color:#1ac620; }
-.gh-c-ATS { color:#1ac620; }
-.gh-bc-AMPL { background-color:#E6EFBB; }
-.gh-c-AMPL { color:#E6EFBB; }
-.gh-bc-Smalltalk { background-color:#596706; }
-.gh-c-Smalltalk { color:#596706; }
-.gh-bc-API-Blueprint { background-color:#2ACCA8; }
-.gh-c-API-Blueprint { color:#2ACCA8; }
-.gh-bc-PAWN { background-color:#dbb284; }
-.gh-c-PAWN { color:#dbb284; }
-.gh-bc-Julia { background-color:#a270ba; }
-.gh-c-Julia { color:#a270ba; }
-.gh-bc-Game-Maker-Language { background-color:#8fb200; }
-.gh-c-Game-Maker-Language { color:#8fb200; }
-.gh-bc-Haskell { background-color:#29b544; }
-.gh-c-Haskell { color:#29b544; }
-.gh-bc-Metal { background-color:#8f14e9; }
-.gh-c-Metal { color:#8f14e9; }
-.gh-bc-PHP { background-color:#4F5D95; }
-.gh-c-PHP { color:#4F5D95; }
-.gh-bc-Clojure { background-color:#db5855; }
-.gh-c-Clojure { color:#db5855; }
-.gh-bc-Python { background-color:#3572A5; }
-.gh-c-Python { color:#3572A5; }
-.gh-bc-J { background-color:#9EEDFF; }
-.gh-c-J { color:#9EEDFF; }
-.gh-bc-VHDL { background-color:#adb2cb; }
-.gh-c-VHDL { color:#adb2cb; }
-.gh-bc-wisp { background-color:#7582D1; }
-.gh-c-wisp { color:#7582D1; }
-.gh-bc-PigLatin { background-color:#fcd7de; }
-.gh-c-PigLatin { color:#fcd7de; }
-.gh-bc-NCL { background-color:#28431f; }
-.gh-c-NCL { color:#28431f; }
-.gh-bc-Ioke { background-color:#078193; }
-.gh-c-Ioke { color:#078193; }
-.gh-bc-Golo { background-color:#88562A; }
-.gh-c-Golo { color:#88562A; }
-.gh-bc-OCaml { background-color:#3be133; }
-.gh-c-OCaml { color:#3be133; }
-.gh-bc-Dogescript { background-color:#cca760; }
-.gh-c-Dogescript { color:#cca760; }
-.gh-bc-Mercury { background-color:#ff2b2b; }
-.gh-c-Mercury { color:#ff2b2b; }
-.gh-bc-Clarion { background-color:#db901e; }
-.gh-c-Clarion { color:#db901e; }
-.gh-bc-cpp { background-color:#f34b7d; }
-.gh-c-cpp { color:#f34b7d; }
-.gh-bc-Stan { background-color:#b2011d; }
-.gh-c-Stan { color:#b2011d; }
-.gh-bc-NetLinx+ERB { background-color:#747faa; }
-.gh-c-NetLinx+ERB { color:#747faa; }
-.gh-bc-Factor { background-color:#636746; }
-.gh-c-Factor { color:#636746; }
-.gh-bc-Verilog { background-color:#b2b7f8; }
-.gh-c-Verilog { color:#b2b7f8; }
-.gh-bc-Zephir { background-color:#118f9e; }
-.gh-c-Zephir { color:#118f9e; }
-.gh-bc-Objective-J { background-color:#ff0c5a; }
-.gh-c-Objective-J { color:#ff0c5a; }
-.gh-bc-JavaScript { background-color:#f1e05a; }
-.gh-c-JavaScript { color:#f1e05a; }
-.gh-bc-Lex { background-color:#DBCA00; }
-.gh-c-Lex { color:#DBCA00; }
-.gh-bc-Isabelle { background-color:#FEFE00; }
-.gh-c-Isabelle { color:#FEFE00; }
-.gh-bc-SaltStack { background-color:#646464; }
-.gh-c-SaltStack { color:#646464; }
-.gh-bc-CoffeeScript { background-color:#244776; }
-.gh-c-CoffeeScript { color:#244776; }
-.gh-bc-FLUX { background-color:#88ccff; }
-.gh-c-FLUX { color:#88ccff; }
-.gh-bc-Objective-C { background-color:#438eff; }
-.gh-c-Objective-C { color:#438eff; }
-.gh-bc-Scala { background-color:#DC322F; }
-.gh-c-Scala { color:#DC322F; }
-.gh-bc-TeX { background-color:#3D6117; }
-.gh-c-TeX { color:#3D6117; }
-.gh-bc-Assembly { background-color:#6E4C13; }
-.gh-c-Assembly { color:#6E4C13; }
-.gh-bc-Nu { background-color:#c9df40; }
-.gh-c-Nu { color:#c9df40; }
-.gh-bc-Objective-Cpp { background-color:#6866fb; }
-.gh-c-Objective-Cpp { color:#6866fb; }
-.gh-bc-Cucumber { background-color:#5B2063; }
-.gh-c-Cucumber { color:#5B2063; }
-.gh-bc-VimL { background-color:#199f4b; }
-.gh-c-VimL { color:#199f4b; }
-.gh-bc-NewLisp { background-color:#87AED7; }
-.gh-c-NewLisp { color:#87AED7; }
-.gh-bc-Gnuplot { background-color:#f0a9f0; }
-.gh-c-Gnuplot { color:#f0a9f0; }
-.gh-bc-Makefile { background-color:#427819; }
-.gh-c-Makefile { color:#427819; }
-.gh-bc-IDL { background-color:#a3522f; }
-.gh-c-IDL { color:#a3522f; }
-.gh-bc-ABAP { background-color:#E8274B; }
-.gh-c-ABAP { color:#E8274B; }
-.gh-bc-Kotlin { background-color:#F18E33; }
-.gh-c-Kotlin { color:#F18E33; }
-.gh-bc-RDoc { background-color:#8E84BF; }
-.gh-c-RDoc { color:#8E84BF; }
-.gh-bc-Go { background-color:#375eab; }
-.gh-c-Go { color:#375eab; }
-.gh-bc-Pan { background-color:#cc0000; }
-.gh-c-Pan { color:#cc0000; }
-.gh-bc-Ren'Py { background-color:#ff7f7f; }
-.gh-c-Ren'Py { color:#ff7f7f; }
-.gh-bc-Arduino { background-color:#bd79d1; }
-.gh-c-Arduino { color:#bd79d1; }
-.gh-bc-Vala { background-color:#fbe5cd; }
-.gh-c-Vala { color:#fbe5cd; }
-.gh-bc-Elixir { background-color:#6e4a7e; }
-.gh-c-Elixir { color:#6e4a7e; }
-.gh-bc-Shen { background-color:#120F14; }
-.gh-c-Shen { color:#120F14; }
-.gh-bc-AppleScript { background-color:#101F1F; }
-.gh-c-AppleScript { color:#101F1F; }
-.gh-bc-ASP { background-color:#6a40fd; }
-.gh-c-ASP { color:#6a40fd; }
-.gh-bc-JFlex { background-color:#DBCA00; }
-.gh-c-JFlex { color:#DBCA00; }
-.gh-bc-NetLinx { background-color:#0aa0ff; }
-.gh-c-NetLinx { color:#0aa0ff; }
-.gh-bc-Dylan { background-color:#6c616e; }
-.gh-c-Dylan { color:#6c616e; }
-.gh-bc-Pascal { background-color:#E3F171; }
-.gh-c-Pascal { color:#E3F171; }
-.gh-bc-Shell { background-color:#89e051; }
-.gh-c-Shell { color:#89e051; }
-.gh-bc-E { background-color:#ccce35; }
-.gh-c-E { color:#ccce35; }
-.gh-bc-Yacc { background-color:#4B6C4B; }
-.gh-c-Yacc { color:#4B6C4B; }
-.gh-bc-Component-Pascal { background-color:#B0CE4E; }
-.gh-c-Component-Pascal { color:#B0CE4E; }
-.gh-bc-Emacs-Lisp { background-color:#c065db; }
-.gh-c-Emacs-Lisp { color:#c065db; }
-.gh-bc-SourcePawn { background-color:#5c7611; }
-.gh-c-SourcePawn { color:#5c7611; }
-.gh-bc-Elm { background-color:#60B5CC; }
-.gh-c-Elm { color:#60B5CC; }
-.gh-bc-Nginx { background-color:#9469E9; }
-.gh-c-Nginx { color:#9469E9; }
-.gh-bc-Lua { background-color:#000080; }
-.gh-c-Lua { color:#000080; }
-.gh-bc-Ada { background-color:#02f88c; }
-.gh-c-Ada { color:#02f88c; }
-.gh-bc-Glyph { background-color:#e4cc98; }
-.gh-c-Glyph { color:#e4cc98; }
-.gh-bc-ColdFusion-CFC { background-color:#ed2cd6; }
-.gh-c-ColdFusion-CFC { color:#ed2cd6; }
-.gh-bc-QML { background-color:#44a51c; }
-.gh-c-QML { color:#44a51c; }
-.gh-bc-Omgrofl { background-color:#cabbff; }
-.gh-c-Omgrofl { color:#cabbff; }
-.gh-bc-RAML { background-color:#77d9fb; }
-.gh-c-RAML { color:#77d9fb; }
-.gh-bc-Arc { background-color:#aa2afe; }
-.gh-c-Arc { color:#aa2afe; }
-.gh-bc-Click { background-color:#E4E6F3; }
-.gh-c-Click { color:#E4E6F3; }
-.gh-bc-Fantom { background-color:#dbded5; }
-.gh-c-Fantom { color:#dbded5; }
-.gh-bc-Pike { background-color:#005390; }
-.gh-c-Pike { color:#005390; }
-.gh-bc-Crystal { background-color:#776791; }
-.gh-c-Crystal { color:#776791; }
-.gh-bc-xBase { background-color:#403a40; }
-.gh-c-xBase { color:#403a40; }
-.gh-bc-LiveScript { background-color:#499886; }
-.gh-c-LiveScript { color:#499886; }
-.gh-bc-Squirrel { background-color:#800000; }
-.gh-c-Squirrel { color:#800000; }
-.gh-bc-UnrealScript { background-color:#a54c4d; }
-.gh-c-UnrealScript { color:#a54c4d; }
-.gh-bc-Standard-ML { background-color:#dc566d; }
-.gh-c-Standard-ML { color:#dc566d; }
-.gh-bc-Clean { background-color:#3F85AF; }
-.gh-c-Clean { color:#3F85AF; }
-.gh-bc-MTML { background-color:#b7e1f4; }
-.gh-c-MTML { color:#b7e1f4; }
-.gh-bc-Erlang { background-color:#B83998; }
-.gh-c-Erlang { color:#B83998; }
-.gh-bc-Mirah { background-color:#c7a938; }
-.gh-c-Mirah { color:#c7a938; }
-.gh-bc-SQF { background-color:#3F3F3F; }
-.gh-c-SQF { color:#3F3F3F; }
-.gh-bc-LSL { background-color:#3d9970; }
-.gh-c-LSL { color:#3d9970; }
-.gh-bc-SuperCollider { background-color:#46390b; }
-.gh-c-SuperCollider { color:#46390b; }
-.gh-bc-EmberScript { background-color:#FFF4F3; }
-.gh-c-EmberScript { color:#FFF4F3; }
-.gh-bc-Tcl { background-color:#e4cc98; }
-.gh-c-Tcl { color:#e4cc98; }
-.gh-bc-Visual-Basic { background-color:#945db7; }
-.gh-c-Visual-Basic { color:#945db7; }
-.gh-bc-BlitzMax { background-color:#cd6400; }
-.gh-c-BlitzMax { color:#cd6400; }
-.gh-bc-Ruby { background-color:#701516; }
-.gh-c-Ruby { color:#701516; }
-.gh-bc-Chapel { background-color:#8dc63f; }
-.gh-c-Chapel { color:#8dc63f; }
-.gh-bc-PureScript { background-color:#1D222D; }
-.gh-c-PureScript { color:#1D222D; }
-.gh-bc-Sass { background-color:#CF649A; }
-.gh-c-Sass { color:#CF649A; }
-.gh-bc-F-Sharp { background-color:#b845fc; }
-.gh-c-F-Sharp { color:#b845fc; }
-.gh-bc-XQuery { background-color:#5232e7; }
-.gh-c-XQuery { color:#5232e7; }
-.gh-bc-R { background-color:#198CE7; }
-.gh-c-R { color:#198CE7; }
-.gh-bc-Less { background-color:#A1D9A1; }
-.gh-c-Less { color:#A1D9A1; }
-.gh-bc-Unified-Parallel-C { background-color:#4e3617; }
-.gh-c-Unified-Parallel-C { color:#4e3617; }
-.gh-bc-C-Sharp { background-color:#178600; }
-.gh-c-C-Sharp { color:#178600; }
-.gh-bc-Web-Ontology-Language { background-color:#9cc9dd; }
-.gh-c-Web-Ontology-Language { color:#9cc9dd; }
-.gh-bc-DM { background-color:#447265; }
-.gh-c-DM { color:#447265; }
-.gh-bc-Jupyter-Notebook { background-color:#DA5B0B; }
-.gh-c-Jupyter-Notebook { color:#DA5B0B; }
-.gh-bc-Gosu { background-color:#82937f; }
-.gh-c-Gosu { color:#82937f; }
-.gh-bc-Nit { background-color:#009917; }
-.gh-c-Nit { color:#009917; }
-.gh-bc-Processing { background-color:#0096D8; }
-.gh-c-Processing { color:#0096D8; }
-.gh-bc-XSLT { background-color:#EB8CEB; }
-.gh-c-XSLT { color:#EB8CEB; }
-.gh-bc-ANTLR { background-color:#9DC3FF; }
-.gh-c-ANTLR { color:#9DC3FF; }
-.gh-bc-Batchfile { background-color:#C1F12E; }
-.gh-c-Batchfile { color:#C1F12E; }
-.gh-bc-Self { background-color:#0579aa; }
-.gh-c-Self { color:#0579aa; }
-.gh-bc-Brainfuck { background-color:#2F2530; }
-.gh-c-Brainfuck { color:#2F2530; }
-.gh-bc-XC { background-color:#99DA07; }
-.gh-c-XC { color:#99DA07; }
-.gh-bc-Groovy { background-color:#e69f56; }
-.gh-c-Groovy { color:#e69f56; }
-.gh-bc-Lasso { background-color:#999999; }
-.gh-c-Lasso { color:#999999; }
-.gh-bc-Haml { background-color:#ECE2A9; }
-.gh-c-Haml { color:#ECE2A9; }
-.gh-bc-Agda { background-color:#315665; }
-.gh-c-Agda { color:#315665; }
-.gh-bc-PureBasic { background-color:#5a6986; }
-.gh-c-PureBasic { color:#5a6986; }
-.gh-bc-Rebol { background-color:#358a5b; }
-.gh-c-Rebol { color:#358a5b; }
-.gh-bc-Hy { background-color:#7790B2; }
-.gh-c-Hy { color:#7790B2; }
-.gh-bc-Bison { background-color:#6A463F; }
-.gh-c-Bison { color:#6A463F; }
-.gh-bc-Vue { background-color:#2c3e50; }
-.gh-c-Vue { color:#2c3e50; }
-.gh-bc-Prolog { background-color:#74283c; }
-.gh-c-Prolog { color:#74283c; }
-.gh-bc-Forth { background-color:#341708; }
-.gh-c-Forth { color:#341708; }
-.gh-bc-SystemVerilog { background-color:#DAE1C2; }
-.gh-c-SystemVerilog { color:#DAE1C2; }
-.gh-bc-ActionScript { background-color:#882B0F; }
-.gh-c-ActionScript { color:#882B0F; }
-.gh-bc-SCSS { background-color:#CF649A; }
-.gh-c-SCSS { color:#CF649A; }
-.gh-bc-Java { background-color:#b07219; }
-.gh-c-Java { color:#b07219; }
-.gh-bc-Harbour { background-color:#0e60e3; }
-.gh-c-Harbour { color:#0e60e3; }
-.gh-bc-Nix { background-color:#7e7eff; }
-.gh-c-Nix { color:#7e7eff; }
-.gh-bc-ooc { background-color:#b0b77e; }
-.gh-c-ooc { color:#b0b77e; }
-.gh-bc-LFE { background-color:#004200; }
-.gh-c-LFE { color:#004200; }
-.gh-bc-NetLogo { background-color:#ff6375; }
-.gh-c-NetLogo { color:#ff6375; }
-.gh-bc-ColdFusion { background-color:#ed2cd6; }
-.gh-c-ColdFusion { color:#ed2cd6; }
-.gh-bc-ECL { background-color:#8a1267; }
-.gh-c-ECL { color:#8a1267; }
-.gh-bc-AutoIt { background-color:#1C3552; }
-.gh-c-AutoIt { color:#1C3552; }
-.gh-bc-MAXScript { background-color:#00a6a6; }
-.gh-c-MAXScript { color:#00a6a6; }
-.gh-bc-Papyrus { background-color:#6600cc; }
-.gh-c-Papyrus { color:#6600cc; }
-.gh-bc-Puppet { background-color:#302B6D; }
-.gh-c-Puppet { color:#302B6D; }
-.gh-bc-Propeller-Spin { background-color:#7fa2a7; }
-.gh-c-Propeller-Spin { color:#7fa2a7; }
-.gh-bc-JSONiq { background-color:#40d47e; }
-.gh-c-JSONiq { color:#40d47e; }
-.gh-bc-Eagle { background-color:#814C05; }
-.gh-c-Eagle { color:#814C05; }
-.gh-bc-AspectJ { background-color:#a957b0; }
-.gh-c-AspectJ { color:#a957b0; }
-.gh-bc-Opal { background-color:#f7ede0; }
-.gh-c-Opal { color:#f7ede0; }
-.gh-bc-PogoScript { background-color:#d80074; }
-.gh-c-PogoScript { color:#d80074; }
-.gh-bc-X10 { background-color:#4B6BEF; }
-.gh-c-X10 { color:#4B6BEF; }
-.gh-bc-eC { background-color:#913960; }
-.gh-c-eC { color:#913960; }
-.gh-bc-Dart { background-color:#00B4AB; }
-.gh-c-Dart { color:#00B4AB; }
-.gh-bc-Ragel-in-Ruby-Host { background-color:#9d5200; }
-.gh-c-Ragel-in-Ruby-Host { color:#9d5200; }
-.gh-bc-Nemerle { background-color:#3d3c6e; }
-.gh-c-Nemerle { color:#3d3c6e; }
-.gh-bc-Latte { background-color:#A8FF97; }
-.gh-c-Latte { color:#A8FF97; }
-.gh-bc-D { background-color:#ba595e; }
-.gh-c-D { color:#ba595e; }
-.gh-bc-Turing { background-color:#45f715; }
-.gh-c-Turing { color:#45f715; }
-.gh-bc-Racket { background-color:#22228f; }
-.gh-c-Racket { color:#22228f; }
-.gh-bc-Markdown { background-color:#083FA1; }
-.gh-c-Markdown { color:#083FA1; }
-.gh-bc-Grammatical-Framework { background-color:#79aa7a; }
-.gh-c-Grammatical-Framework { color:#79aa7a; }
-.gh-bc-Io { background-color:#a9188d; }
-.gh-c-Io { color:#a9188d; }
-.gh-bc-Hack { background-color:#878787; }
-.gh-c-Hack { color:#878787; }
-.gh-bc-TypeScript { background-color:#2b7489; }
-.gh-c-TypeScript { color:#2b7489; }
-.gh-bc-Swift { background-color:#ffac45; }
-.gh-c-Swift { color:#ffac45; }
-.gh-bc-C { background-color:#555555; }
-.gh-c-C { color:#555555; }
-.gh-bc-Volt { background-color:#1F1F1F; }
-.gh-c-Volt { color:#1F1F1F; }
-.gh-bc-Cuda { background-color:#3A4E3A; }
-.gh-c-Cuda { color:#3A4E3A; }
-.gh-bc-Nimrod { background-color:#37775b; }
-.gh-c-Nimrod { color:#37775b; }
-.gh-bc-Slim { background-color:#ff8f77; }
-.gh-c-Slim { color:#ff8f77; }
-.gh-bc-FreeMarker { background-color:#0050b2; }
-.gh-c-FreeMarker { color:#0050b2; }
-.gh-bc-Matlab { background-color:#bb92ac; }
-.gh-c-Matlab { color:#bb92ac; }
-.gh-bc-Alloy { background-color:#64C800; }
-.gh-c-Alloy { color:#64C800; }
-.gh-bc-AutoHotkey { background-color:#6594b9; }
-.gh-c-AutoHotkey { color:#6594b9; }
-.gh-bc-Eiffel { background-color:#946d57; }
-.gh-c-Eiffel { color:#946d57; }
-.gh-bc-HTML { background-color:#e44b23; }
-.gh-c-HTML { color:#e44b23; }
-.gh-bc-Scheme { background-color:#1e4aec; }
-.gh-c-Scheme { color:#1e4aec; }
-.gh-bc-Red { background-color:#ee0000; }
-.gh-c-Red { color:#ee0000; }
-.gh-bc-Slash { background-color:#007eff; }
-.gh-c-Slash { color:#007eff; }
-.gh-bc-nesC { background-color:#94B0C7; }
-.gh-c-nesC { color:#94B0C7; }
-.gh-bc-Frege { background-color:#00cafe; }
-.gh-c-Frege { color:#00cafe; }
-.gh-bc-reStructuredText { background-color:#B3BCBC; }
-.gh-c-reStructuredText { color:#B3BCBC; }
-.gh-bc-Pure-Data { background-color:#91de79; }
-.gh-c-Pure-Data { color:#91de79; }
-.gh-bc-PLSQL { background-color:#dad8d8; }
-.gh-c-PLSQL { color:#dad8d8; }
-.gh-bc-LookML { background-color:#652B81; }
-.gh-c-LookML { color:#652B81; }
-.gh-bc-KRL { background-color:#28431f; }
-.gh-c-KRL { color:#28431f; }
-.gh-bc-Rouge { background-color:#cc0088; }
-.gh-c-Rouge { color:#cc0088; }
-.gh-bc-Terra { background-color:#00004c; }
-.gh-c-Terra { color:#00004c; }
-.gh-bc-NumPy { background-color:#9C8AF9; }
-.gh-c-NumPy { color:#9C8AF9; }
-.gh-bc-Cirru { background-color:#ccccff; }
-.gh-c-Cirru { color:#ccccff; }
-.gh-bc-Boo { background-color:#d4bec1; }
-.gh-c-Boo { color:#d4bec1; }
-.gh-bc-Mask { background-color:#f97732; }
-.gh-c-Mask { color:#f97732; }
-.gh-bc-Handlebars { background-color:#01a9d6; }
-.gh-c-Handlebars { color:#01a9d6; }
-.gh-bc-CSS { background-color:#563d7c; }
-.gh-c-CSS { color:#563d7c; }
-.gh-bc-LOLCODE { background-color:#cc9900; }
-.gh-c-LOLCODE { color:#cc9900; }
-.gh-bc-Perl6 { background-color:#0000fb; }
-.gh-c-Perl6 { color:#0000fb; }
-.gh-bc-Rust { background-color:#dea584; }
-.gh-c-Rust { color:#dea584; }
-.gh-bc-AGS-Script { background-color:#B9D9FF; }
-.gh-c-AGS-Script { color:#B9D9FF; }
-.gh-bc-Parrot { background-color:#f3ca0a; }
-.gh-c-Parrot { color:#f3ca0a; }
-.gh-bc-SAS { background-color:#B34936; }
-.gh-c-SAS { color:#B34936; }
-.gh-bc-Haxe { background-color:#df7900; }
-.gh-c-Haxe { color:#df7900; }
-.gh-bc-Fancy { background-color:#7b9db4; }
-.gh-c-Fancy { color:#7b9db4; }
-.gh-bc-FORTRAN { background-color:#4d41b1; }
-.gh-c-FORTRAN { color:#4d41b1; }
-.gh-bc-Common-Lisp { background-color:#3fb68b; }
-.gh-c-Common-Lisp { color:#3fb68b; }
-.gh-bc-Perl { background-color:#0298c3; }
-.gh-c-Perl { color:#0298c3; }
-.gh-bc-APL { background-color:#5A8164; }
-.gh-c-APL { color:#5A8164; }
+.gh-bc-Standard-ML { background-color: #dc566d; }
+.gh-c-Standard-ML { color: #dc566d; }
+.gh-bc-FORTRAN { background-color: #4d41b1; }
+.gh-c-FORTRAN { color: #4d41b1; }
+.gh-bc-AGS-Script { background-color: #B9D9FF; }
+.gh-c-AGS-Script { color: #B9D9FF; }
+.gh-bc-Isabelle { background-color: #FEFE00; }
+.gh-c-Isabelle { color: #FEFE00; }
+.gh-bc-Chapel { background-color: #8dc63f; }
+.gh-c-Chapel { color: #8dc63f; }
+.gh-bc-Makefile { background-color: #427819; }
+.gh-c-Makefile { color: #427819; }
+.gh-bc-AMPL { background-color: #E6EFBB; }
+.gh-c-AMPL { color: #E6EFBB; }
+.gh-bc-Scala { background-color: #DC322F; }
+.gh-c-Scala { color: #DC322F; }
+.gh-bc-Hack { background-color: #878787; }
+.gh-c-Hack { color: #878787; }
+.gh-bc-Smalltalk { background-color: #596706; }
+.gh-c-Smalltalk { color: #596706; }
+.gh-bc-D { background-color: #ba595e; }
+.gh-c-D { color: #ba595e; }
+.gh-bc-Cuda { background-color: #3A4E3A; }
+.gh-c-Cuda { color: #3A4E3A; }
+.gh-bc-Lex { background-color: #DBCA00; }
+.gh-c-Lex { color: #DBCA00; }
+.gh-bc-XC { background-color: #99DA07; }
+.gh-c-XC { color: #99DA07; }
+.gh-bc-LSL { background-color: #3d9970; }
+.gh-c-LSL { color: #3d9970; }
+.gh-bc-Opal { background-color: #f7ede0; }
+.gh-c-Opal { color: #f7ede0; }
+.gh-bc-ColdFusion { background-color: #ed2cd6; }
+.gh-c-ColdFusion { color: #ed2cd6; }
+.gh-bc-Grammatical-Framework { background-color: #79aa7a; }
+.gh-c-Grammatical-Framework { color: #79aa7a; }
+.gh-bc-Oz { background-color: #fab738; }
+.gh-c-Oz { color: #fab738; }
+.gh-bc-Nit { background-color: #009917; }
+.gh-c-Nit { color: #009917; }
+.gh-bc-Yacc { background-color: #4B6C4B; }
+.gh-c-Yacc { color: #4B6C4B; }
+.gh-bc-J { background-color: #9EEDFF; }
+.gh-c-J { color: #9EEDFF; }
+.gh-bc-Ren'Py { background-color: #ff7f7f; }
+.gh-c-Ren'Py { color: #ff7f7f; }
+.gh-bc-Bison { background-color: #6A463F; }
+.gh-c-Bison { color: #6A463F; }
+.gh-bc-SuperCollider { background-color: #46390b; }
+.gh-c-SuperCollider { color: #46390b; }
+.gh-bc-Turing { background-color: #45f715; }
+.gh-c-Turing { color: #45f715; }
+.gh-bc-BlitzMax { background-color: #cd6400; }
+.gh-c-BlitzMax { color: #cd6400; }
+.gh-bc-Shen { background-color: #120F14; }
+.gh-c-Shen { color: #120F14; }
+.gh-bc-Go { background-color: #375eab; }
+.gh-c-Go { color: #375eab; }
+.gh-bc-Pure-Data { background-color: #91de79; }
+.gh-c-Pure-Data { color: #91de79; }
+.gh-bc-Java { background-color: #b07219; }
+.gh-c-Java { color: #b07219; }
+.gh-bc-SCSS { background-color: #CF649A; }
+.gh-c-SCSS { color: #CF649A; }
+.gh-bc-Dart { background-color: #00B4AB; }
+.gh-c-Dart { color: #00B4AB; }
+.gh-bc-Frege { background-color: #00cafe; }
+.gh-c-Frege { color: #00cafe; }
+.gh-bc-Dylan { background-color: #6c616e; }
+.gh-c-Dylan { color: #6c616e; }
+.gh-bc-Rust { background-color: #dea584; }
+.gh-c-Rust { color: #dea584; }
+.gh-bc-Cirru { background-color: #ccccff; }
+.gh-c-Cirru { color: #ccccff; }
+.gh-bc-Markdown { background-color: #083FA1; }
+.gh-c-Markdown { color: #083FA1; }
+.gh-bc-Latte { background-color: #A8FF97; }
+.gh-c-Latte { color: #A8FF97; }
+.gh-bc-Less { background-color: #A1D9A1; }
+.gh-c-Less { color: #A1D9A1; }
+.gh-bc-Eiffel { background-color: #946d57; }
+.gh-c-Eiffel { color: #946d57; }
+.gh-bc-Assembly { background-color: #6E4C13; }
+.gh-c-Assembly { color: #6E4C13; }
+.gh-bc-Alloy { background-color: #64C800; }
+.gh-c-Alloy { color: #64C800; }
+.gh-bc-JFlex { background-color: #DBCA00; }
+.gh-c-JFlex { color: #DBCA00; }
+.gh-bc-PHP { background-color: #4F5D95; }
+.gh-c-PHP { color: #4F5D95; }
+.gh-bc-ActionScript { background-color: #882B0F; }
+.gh-c-ActionScript { color: #882B0F; }
+.gh-bc-PureScript { background-color: #1D222D; }
+.gh-c-PureScript { color: #1D222D; }
+.gh-bc-reStructuredText { background-color: #B3BCBC; }
+.gh-c-reStructuredText { color: #B3BCBC; }
+.gh-bc-EmberScript { background-color: #FFF4F3; }
+.gh-c-EmberScript { color: #FFF4F3; }
+.gh-bc-Clarion { background-color: #db901e; }
+.gh-c-Clarion { color: #db901e; }
+.gh-bc-Terra { background-color: #00004c; }
+.gh-c-Terra { color: #00004c; }
+.gh-bc-Objective-C { background-color: #438eff; }
+.gh-c-Objective-C { color: #438eff; }
+.gh-bc-RDoc { background-color: #8E84BF; }
+.gh-c-RDoc { color: #8E84BF; }
+.gh-bc-Mask { background-color: #f97732; }
+.gh-c-Mask { color: #f97732; }
+.gh-bc-Vue { background-color: #2c3e50; }
+.gh-c-Vue { color: #2c3e50; }
+.gh-bc-Brainfuck { background-color: #2F2530; }
+.gh-c-Brainfuck { color: #2F2530; }
+.gh-bc-Nemerle { background-color: #3d3c6e; }
+.gh-c-Nemerle { color: #3d3c6e; }
+.gh-bc-AspectJ { background-color: #a957b0; }
+.gh-c-AspectJ { color: #a957b0; }
+.gh-bc-ANTLR { background-color: #9DC3FF; }
+.gh-c-ANTLR { color: #9DC3FF; }
+.gh-bc-cpp { background-color: #f34b7d; }
+.gh-c-cpp { color: #f34b7d; }
+.gh-bc-Tcl { background-color: #e4cc98; }
+.gh-c-Tcl { color: #e4cc98; }
+.gh-bc-Nu { background-color: #c9df40; }
+.gh-c-Nu { color: #c9df40; }
+.gh-bc-Pan { background-color: #cc0000; }
+.gh-c-Pan { color: #cc0000; }
+.gh-bc-Racket { background-color: #22228f; }
+.gh-c-Racket { color: #22228f; }
+.gh-bc-SourcePawn { background-color: #5c7611; }
+.gh-c-SourcePawn { color: #5c7611; }
+.gh-bc-PureBasic { background-color: #5a6986; }
+.gh-c-PureBasic { color: #5a6986; }
+.gh-bc-C { background-color: #555555; }
+.gh-c-C { color: #555555; }
+.gh-bc-Max { background-color: #c4a79c; }
+.gh-c-Max { color: #c4a79c; }
+.gh-bc-C-Sharp { background-color: #178600; }
+.gh-c-C-Sharp { color: #178600; }
+.gh-bc-Lua { background-color: #000080; }
+.gh-c-Lua { color: #000080; }
+.gh-bc-Common-Lisp { background-color: #3fb68b; }
+.gh-c-Common-Lisp { color: #3fb68b; }
+.gh-bc-ASP { background-color: #6a40fd; }
+.gh-c-ASP { color: #6a40fd; }
+.gh-bc-JSONiq { background-color: #40d47e; }
+.gh-c-JSONiq { color: #40d47e; }
+.gh-bc-Game-Maker-Language { background-color: #8fb200; }
+.gh-c-Game-Maker-Language { color: #8fb200; }
+.gh-bc-CoffeeScript { background-color: #244776; }
+.gh-c-CoffeeScript { color: #244776; }
+.gh-bc-LOLCODE { background-color: #cc9900; }
+.gh-c-LOLCODE { color: #cc9900; }
+.gh-bc-Crystal { background-color: #776791; }
+.gh-c-Crystal { color: #776791; }
+.gh-bc-xBase { background-color: #403a40; }
+.gh-c-xBase { color: #403a40; }
+.gh-bc-Metal { background-color: #8f14e9; }
+.gh-c-Metal { color: #8f14e9; }
+.gh-bc-Groovy { background-color: #e69f56; }
+.gh-c-Groovy { color: #e69f56; }
+.gh-bc-Pike { background-color: #005390; }
+.gh-c-Pike { color: #005390; }
+.gh-bc-Ruby { background-color: #701516; }
+.gh-c-Ruby { color: #701516; }
+.gh-bc-Jupyter-Notebook { background-color: #DA5B0B; }
+.gh-c-Jupyter-Notebook { color: #DA5B0B; }
+.gh-bc-NumPy { background-color: #9C8AF9; }
+.gh-c-NumPy { color: #9C8AF9; }
+.gh-bc-PogoScript { background-color: #d80074; }
+.gh-c-PogoScript { color: #d80074; }
+.gh-bc-ABAP { background-color: #E8274B; }
+.gh-c-ABAP { color: #E8274B; }
+.gh-bc-SAS { background-color: #B34936; }
+.gh-c-SAS { color: #B34936; }
+.gh-bc-HTML { background-color: #e44b23; }
+.gh-c-HTML { color: #e44b23; }
+.gh-bc-LLVM { background-color: #185619; }
+.gh-c-LLVM { color: #185619; }
+.gh-bc-Omgrofl { background-color: #cabbff; }
+.gh-c-Omgrofl { color: #cabbff; }
+.gh-bc-Nimrod { background-color: #37775b; }
+.gh-c-Nimrod { color: #37775b; }
+.gh-bc-ECL { background-color: #8a1267; }
+.gh-c-ECL { color: #8a1267; }
+.gh-bc-Arduino { background-color: #bd79d1; }
+.gh-c-Arduino { color: #bd79d1; }
+.gh-bc-Rebol { background-color: #358a5b; }
+.gh-c-Rebol { color: #358a5b; }
+.gh-bc-Batchfile { background-color: #C1F12E; }
+.gh-c-Batchfile { color: #C1F12E; }
+.gh-bc-SystemVerilog { background-color: #DAE1C2; }
+.gh-c-SystemVerilog { color: #DAE1C2; }
+.gh-bc-API-Blueprint { background-color: #2ACCA8; }
+.gh-c-API-Blueprint { color: #2ACCA8; }
+.gh-bc-Oxygene { background-color: #cdd0e3; }
+.gh-c-Oxygene { color: #cdd0e3; }
+.gh-bc-Parrot { background-color: #f3ca0a; }
+.gh-c-Parrot { color: #f3ca0a; }
+.gh-bc-Emacs-Lisp { background-color: #c065db; }
+.gh-c-Emacs-Lisp { color: #c065db; }
+.gh-bc-Nginx { background-color: #9469E9; }
+.gh-c-Nginx { color: #9469E9; }
+.gh-bc-Scheme { background-color: #1e4aec; }
+.gh-c-Scheme { color: #1e4aec; }
+.gh-bc-SaltStack { background-color: #646464; }
+.gh-c-SaltStack { color: #646464; }
+.gh-bc-FreeMarker { background-color: #0050b2; }
+.gh-c-FreeMarker { color: #0050b2; }
+.gh-bc-Prolog { background-color: #74283c; }
+.gh-c-Prolog { color: #74283c; }
+.gh-bc-NCL { background-color: #28431f; }
+.gh-c-NCL { color: #28431f; }
+.gh-bc-AutoIt { background-color: #1C3552; }
+.gh-c-AutoIt { color: #1C3552; }
+.gh-bc-Mercury { background-color: #ff2b2b; }
+.gh-c-Mercury { color: #ff2b2b; }
+.gh-bc-UnrealScript { background-color: #a54c4d; }
+.gh-c-UnrealScript { color: #a54c4d; }
+.gh-bc-ooc { background-color: #b0b77e; }
+.gh-c-ooc { color: #b0b77e; }
+.gh-bc-X10 { background-color: #4B6BEF; }
+.gh-c-X10 { color: #4B6BEF; }
+.gh-bc-NetLinx+ERB { background-color: #747faa; }
+.gh-c-NetLinx+ERB { color: #747faa; }
+.gh-bc-Elixir { background-color: #6e4a7e; }
+.gh-c-Elixir { color: #6e4a7e; }
+.gh-bc-OCaml { background-color: #3be133; }
+.gh-c-OCaml { color: #3be133; }
+.gh-bc-Perl6 { background-color: #0000fb; }
+.gh-c-Perl6 { color: #0000fb; }
+.gh-bc-QML { background-color: #44a51c; }
+.gh-c-QML { color: #44a51c; }
+.gh-bc-AutoHotkey { background-color: #6594b9; }
+.gh-c-AutoHotkey { color: #6594b9; }
+.gh-bc-NewLisp { background-color: #87AED7; }
+.gh-c-NewLisp { color: #87AED7; }
+.gh-bc-Fantom { background-color: #dbded5; }
+.gh-c-Fantom { color: #dbded5; }
+.gh-bc-Zephir { background-color: #118f9e; }
+.gh-c-Zephir { color: #118f9e; }
+.gh-bc-VimL { background-color: #199f4b; }
+.gh-c-VimL { color: #199f4b; }
+.gh-bc-Mirah { background-color: #c7a938; }
+.gh-c-Mirah { color: #c7a938; }
+.gh-bc-Kotlin { background-color: #F18E33; }
+.gh-c-Kotlin { color: #F18E33; }
+.gh-bc-Objective-Cpp { background-color: #6866fb; }
+.gh-c-Objective-Cpp { color: #6866fb; }
+.gh-bc-Clojure { background-color: #db5855; }
+.gh-c-Clojure { color: #db5855; }
+.gh-bc-Swift { background-color: #ffac45; }
+.gh-c-Swift { color: #ffac45; }
+.gh-bc-Fancy { background-color: #7b9db4; }
+.gh-c-Fancy { color: #7b9db4; }
+.gh-bc-PAWN { background-color: #dbb284; }
+.gh-c-PAWN { color: #dbb284; }
+.gh-bc-Slash { background-color: #007eff; }
+.gh-c-Slash { color: #007eff; }
+.gh-bc-VHDL { background-color: #adb2cb; }
+.gh-c-VHDL { color: #adb2cb; }
+.gh-bc-AppleScript { background-color: #101F1F; }
+.gh-c-AppleScript { color: #101F1F; }
+.gh-bc-Processing { background-color: #0096D8; }
+.gh-c-Processing { color: #0096D8; }
+.gh-bc-Slim { background-color: #ff8f77; }
+.gh-c-Slim { color: #ff8f77; }
+.gh-bc-Boo { background-color: #d4bec1; }
+.gh-c-Boo { color: #d4bec1; }
+.gh-bc-Visual-Basic { background-color: #945db7; }
+.gh-c-Visual-Basic { color: #945db7; }
+.gh-bc-wisp { background-color: #7582D1; }
+.gh-c-wisp { color: #7582D1; }
+.gh-bc-Papyrus { background-color: #6600cc; }
+.gh-c-Papyrus { color: #6600cc; }
+.gh-bc-Sass { background-color: #CF649A; }
+.gh-c-Sass { color: #CF649A; }
+.gh-bc-Ada { background-color: #02f88c; }
+.gh-c-Ada { color: #02f88c; }
+.gh-bc-Unified-Parallel-C { background-color: #4e3617; }
+.gh-c-Unified-Parallel-C { color: #4e3617; }
+.gh-bc-FLUX { background-color: #88ccff; }
+.gh-c-FLUX { color: #88ccff; }
+.gh-bc-Propeller-Spin { background-color: #7fa2a7; }
+.gh-c-Propeller-Spin { color: #7fa2a7; }
+.gh-bc-SQF { background-color: #3F3F3F; }
+.gh-c-SQF { color: #3F3F3F; }
+.gh-bc-Web-Ontology-Language { background-color: #9cc9dd; }
+.gh-c-Web-Ontology-Language { color: #9cc9dd; }
+.gh-bc-KRL { background-color: #28431f; }
+.gh-c-KRL { color: #28431f; }
+.gh-bc-Perl { background-color: #0298c3; }
+.gh-c-Perl { color: #0298c3; }
+.gh-bc-E { background-color: #ccce35; }
+.gh-c-E { color: #ccce35; }
+.gh-bc-Eagle { background-color: #814C05; }
+.gh-c-Eagle { color: #814C05; }
+.gh-bc-Gnuplot { background-color: #f0a9f0; }
+.gh-c-Gnuplot { color: #f0a9f0; }
+.gh-bc-Red { background-color: #ee0000; }
+.gh-c-Red { color: #ee0000; }
+.gh-bc-TypeScript { background-color: #2b7489; }
+.gh-c-TypeScript { color: #2b7489; }
+.gh-bc-Dogescript { background-color: #cca760; }
+.gh-c-Dogescript { color: #cca760; }
+.gh-bc-Arc { background-color: #aa2afe; }
+.gh-c-Arc { color: #aa2afe; }
+.gh-bc-JavaScript { background-color: #f1e05a; }
+.gh-c-JavaScript { color: #f1e05a; }
+.gh-bc-Golo { background-color: #88562A; }
+.gh-c-Golo { color: #88562A; }
+.gh-bc-Agda { background-color: #315665; }
+.gh-c-Agda { color: #315665; }
+.gh-bc-Cucumber { background-color: #5B2063; }
+.gh-c-Cucumber { color: #5B2063; }
+.gh-bc-Julia { background-color: #a270ba; }
+.gh-c-Julia { color: #a270ba; }
+.gh-bc-Glyph { background-color: #e4cc98; }
+.gh-c-Glyph { color: #e4cc98; }
+.gh-bc-Ragel-in-Ruby-Host { background-color: #9d5200; }
+.gh-c-Ragel-in-Ruby-Host { color: #9d5200; }
+.gh-bc-nesC { background-color: #94B0C7; }
+.gh-c-nesC { color: #94B0C7; }
+.gh-bc-Nix { background-color: #7e7eff; }
+.gh-c-Nix { color: #7e7eff; }
+.gh-bc-LiveScript { background-color: #499886; }
+.gh-c-LiveScript { color: #499886; }
+.gh-bc-XSLT { background-color: #EB8CEB; }
+.gh-c-XSLT { color: #EB8CEB; }
+.gh-bc-Pascal { background-color: #E3F171; }
+.gh-c-Pascal { color: #E3F171; }
+.gh-bc-Forth { background-color: #341708; }
+.gh-c-Forth { color: #341708; }
+.gh-bc-RAML { background-color: #77d9fb; }
+.gh-c-RAML { color: #77d9fb; }
+.gh-bc-Puppet { background-color: #302B6D; }
+.gh-c-Puppet { color: #302B6D; }
+.gh-bc-Squirrel { background-color: #800000; }
+.gh-c-Squirrel { color: #800000; }
+.gh-bc-ColdFusion-CFC { background-color: #ed2cd6; }
+.gh-c-ColdFusion-CFC { color: #ed2cd6; }
+.gh-bc-PigLatin { background-color: #fcd7de; }
+.gh-c-PigLatin { color: #fcd7de; }
+.gh-bc-Haml { background-color: #ECE2A9; }
+.gh-c-Haml { color: #ECE2A9; }
+.gh-bc-ATS { background-color: #1ac620; }
+.gh-c-ATS { color: #1ac620; }
+.gh-bc-Harbour { background-color: #0e60e3; }
+.gh-c-Harbour { color: #0e60e3; }
+.gh-bc-TeX { background-color: #3D6117; }
+.gh-c-TeX { color: #3D6117; }
+.gh-bc-Verilog { background-color: #b2b7f8; }
+.gh-c-Verilog { color: #b2b7f8; }
+.gh-bc-Io { background-color: #a9188d; }
+.gh-c-Io { color: #a9188d; }
+.gh-bc-Factor { background-color: #636746; }
+.gh-c-Factor { color: #636746; }
+.gh-bc-DM { background-color: #447265; }
+.gh-c-DM { color: #447265; }
+.gh-bc-CSS { background-color: #563d7c; }
+.gh-c-CSS { color: #563d7c; }
+.gh-bc-Haxe { background-color: #df7900; }
+.gh-c-Haxe { color: #df7900; }
+.gh-bc-PLSQL { background-color: #dad8d8; }
+.gh-c-PLSQL { color: #dad8d8; }
+.gh-bc-Objective-J { background-color: #ff0c5a; }
+.gh-c-Objective-J { color: #ff0c5a; }
+.gh-bc-Self { background-color: #0579aa; }
+.gh-c-Self { color: #0579aa; }
+.gh-bc-Matlab { background-color: #bb92ac; }
+.gh-c-Matlab { color: #bb92ac; }
+.gh-bc-Rouge { background-color: #cc0088; }
+.gh-c-Rouge { color: #cc0088; }
+.gh-bc-XQuery { background-color: #5232e7; }
+.gh-c-XQuery { color: #5232e7; }
+.gh-bc-Volt { background-color: #1F1F1F; }
+.gh-c-Volt { color: #1F1F1F; }
+.gh-bc-NetLogo { background-color: #ff6375; }
+.gh-c-NetLogo { color: #ff6375; }
+.gh-bc-R { background-color: #198CE7; }
+.gh-c-R { color: #198CE7; }
+.gh-bc-Gosu { background-color: #82937f; }
+.gh-c-Gosu { color: #82937f; }
+.gh-bc-Component-Pascal { background-color: #B0CE4E; }
+.gh-c-Component-Pascal { color: #B0CE4E; }
+.gh-bc-NetLinx { background-color: #0aa0ff; }
+.gh-c-NetLinx { color: #0aa0ff; }
+.gh-bc-Handlebars { background-color: #01a9d6; }
+.gh-c-Handlebars { color: #01a9d6; }
+.gh-bc-LFE { background-color: #004200; }
+.gh-c-LFE { color: #004200; }
+.gh-bc-Clean { background-color: #3F85AF; }
+.gh-c-Clean { color: #3F85AF; }
+.gh-bc-Vala { background-color: #fbe5cd; }
+.gh-c-Vala { color: #fbe5cd; }
+.gh-bc-Lasso { background-color: #999999; }
+.gh-c-Lasso { color: #999999; }
+.gh-bc-Stan { background-color: #b2011d; }
+.gh-c-Stan { color: #b2011d; }
+.gh-bc-F-Sharp { background-color: #b845fc; }
+.gh-c-F-Sharp { color: #b845fc; }
+.gh-bc-Erlang { background-color: #B83998; }
+.gh-c-Erlang { color: #B83998; }
+.gh-bc-LookML { background-color: #652B81; }
+.gh-c-LookML { color: #652B81; }
+.gh-bc-Elm { background-color: #60B5CC; }
+.gh-c-Elm { color: #60B5CC; }
+.gh-bc-APL { background-color: #5A8164; }
+.gh-c-APL { color: #5A8164; }
+.gh-bc-Haskell { background-color: #29b544; }
+.gh-c-Haskell { color: #29b544; }
+.gh-bc-MAXScript { background-color: #00a6a6; }
+.gh-c-MAXScript { color: #00a6a6; }
+.gh-bc-Shell { background-color: #89e051; }
+.gh-c-Shell { color: #89e051; }
+.gh-bc-Python { background-color: #3572A5; }
+.gh-c-Python { color: #3572A5; }
+.gh-bc-Click { background-color: #E4E6F3; }
+.gh-c-Click { color: #E4E6F3; }
+.gh-bc-Ioke { background-color: #078193; }
+.gh-c-Ioke { color: #078193; }
+.gh-bc-Hy { background-color: #7790B2; }
+.gh-c-Hy { color: #7790B2; }
+.gh-bc-MTML { background-color: #b7e1f4; }
+.gh-c-MTML { color: #b7e1f4; }
+.gh-bc-IDL { background-color: #a3522f; }
+.gh-c-IDL { color: #a3522f; }
+.gh-bc-eC { background-color: #913960; }
+.gh-c-eC { color: #913960; }
