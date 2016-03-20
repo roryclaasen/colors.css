@@ -23,8 +23,8 @@ colors = dict((replace_names.get(name, name), color['color']) for name, color in
 
 with open('colors.css', 'w') as f:
     for key, value in colors.items():
-        f.write(prefix + background + "-" + key.replace(" ", "-") + " { background-color: " + value.lower() + " !important; }\n")
-        f.write(prefix + color + "-" + key.replace(" ", "-") + " { color: " + value.lower() + " !important; }\n")
+        f.write(prefix + background + "-" + key.replace(" ", "-").lower() + " { background-color: " + value + " !important; }\n")
+        f.write(prefix + color + "-" + key.replace(" ", "-").lower() + " { color: " + value + " !important; }\n")
 
 template = "# colors.css"
 with open('readmetemplate.md', 'r') as f:
