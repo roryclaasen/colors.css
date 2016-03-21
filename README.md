@@ -4,7 +4,7 @@ Colors.css is a mapping of colors that github uses to represent different progra
 ### Usage
 Download this  [file](https://github.com/GOGO98901/colors.css/blob/master/colors.css) and link it with your project.
 ```html
-<link rel="stylesheet" href="https://raw.githack.com/GOGO98901/colors.css/master/colors.css" />
+<link rel="stylesheet" href="css/colors.css" />
 ```
 ```css
 @import("https://raw.githack.com/GOGO98901/colors.css/master/colors.css")
