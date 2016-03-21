@@ -12,7 +12,7 @@ Download this  [file](https://github.com/GOGO98901/colors.css/blob/master/colors
 #### Implementation
 To use as background color use prefix
 ```
-.ghbg-(language)
+.gh-bg-(language)
 ```
 To use as color use prefix
 ```
