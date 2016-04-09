@@ -8,7 +8,7 @@ You can even set it up as [git submodule](https://git-scm.com/book/en/v2/Git-Too
 <link rel="stylesheet" href="stylesheets/colors.min.css" />
 ```
 ```css
-@import("https://raw.githack.com/GOGO98901/colors.css/master/colors.css")
+@import("colors.min.css")
 ```
 #### Implementation
 To use as background color use prefix
