@@ -11,6 +11,7 @@ replace_names = {
     'Objective-C++': 'Objective-Cpp',
     'C#': 'C Sharp',
     'F#': 'F Sharp',
+    'NetLinx+ERB': 'NetLinx-ERB'
 }
 
 urllib.request.urlretrieve("https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml", "languages.yml")

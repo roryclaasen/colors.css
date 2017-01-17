@@ -120,7 +120,7 @@ To use as color use prefix
 ![color](http://www.placehold.it/150/6e4c13/ffffff&text=Assembly)
 ![color](http://www.placehold.it/150/701516/ffffff&text=Ruby)
 ![color](http://www.placehold.it/150/74283c/ffffff&text=Prolog)
-![color](http://www.placehold.it/150/747faa/ffffff&text=NetLinx+ERB)
+![color](http://www.placehold.it/150/747faa/ffffff&text=NetLinx-ERB)
 ![color](http://www.placehold.it/150/7582d1/ffffff&text=wisp)
 ![color](http://www.placehold.it/150/776791/ffffff&text=Crystal)
 ![color](http://www.placehold.it/150/7790b2/ffffff&text=Hy)
