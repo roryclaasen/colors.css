@@ -29,6 +29,15 @@ with open('dist/colors.min.css', 'w') as f:
         f.write(prefix + background + "-" + key.replace(" ", "-").lower() + "{background-color:" + value + "!important;}")
         f.write(prefix + color + "-" + key.replace(" ", "-").lower() + "{color:" + value + "!important;}")
 
+with open('dist/colors.less', 'w') as f:
+    for key, value in colors.items():
+        f.write("@" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";")
+
+with open('dist/colors.scss', 'w') as f:
+    for key, value in colors.items():
+        f.write("$" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";")
+
+
 template = "# colors.css"
 with open('readmetemplate.md', 'r') as f:
     template = f.read()
