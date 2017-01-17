@@ -21,7 +21,10 @@ os.remove('languages.yml')
 
 colors = dict((replace_names.get(name, name), color['color']) for name, color in colors.items() if 'color' in color)
 
-with open('colors.min.css', 'w') as f:
+if not os.path.exists('dist'):
+    os.makedirs('dist')
+
+with open('dist/colors.min.css', 'w') as f:
     for key, value in colors.items():
         f.write(prefix + background + "-" + key.replace(" ", "-").lower() + "{background-color:" + value + "!important;}")
         f.write(prefix + color + "-" + key.replace(" ", "-").lower() + "{color:" + value + "!important;}")
