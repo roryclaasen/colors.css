@@ -2,7 +2,7 @@ import urllib.request
 import yaml
 import os
 
-prefix = ".gh"
+prefix = "gh"
 background = "-bg"
 color = ""
 
@@ -26,8 +26,8 @@ if not os.path.exists('dist'):
 
 with open('dist/colors.min.css', 'w') as f:
     for key, value in colors.items():
-        f.write(prefix + background + "-" + key.replace(" ", "-").lower() + "{background-color:" + value + "!important;}")
-        f.write(prefix + color + "-" + key.replace(" ", "-").lower() + "{color:" + value + "!important;}")
+        f.write("." + prefix + background + "-" + key.replace(" ", "-").lower() + "{background-color:" + value + "!important;}")
+        f.write("." + prefix + color + "-" + key.replace(" ", "-").lower() + "{color:" + value + "!important;}")
 
 with open('dist/colors.less', 'w') as f:
     for key, value in colors.items():
