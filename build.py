@@ -31,11 +31,11 @@ with open('dist/colors.min.css', 'w') as f:
 
 with open('dist/colors.less', 'w') as f:
     for key, value in colors.items():
-        f.write("@" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";")
+        f.write("@" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";\n")
 
 with open('dist/colors.scss', 'w') as f:
     for key, value in colors.items():
-        f.write("$" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";")
+        f.write("$" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";\n")
 
 
 template = "# colors.css"
