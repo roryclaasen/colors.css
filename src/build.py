@@ -15,6 +15,8 @@ replace_names = {
     'NetLinx+ERB': 'NetLinx-ERB'
 }
 
+copyLicence = "/*\nCopyright (c) 2016-2017 Rory Claasen\nThe MIT License (MIT)\n*/\n"
+
 urllib.request.urlretrieve("https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml", "languages.yml")
 
 with open("languages.yml") as f:
@@ -45,6 +47,7 @@ if not os.path.exists('dist'):
     os.makedirs('dist')
 
 with open('dist/colors.min.css', 'w') as f:
+    f.write(copyLicence)
     for key, value in orderedColors.items():
         f.write("." + prefix + background + "-" + key.replace(" ", "-").lower() + "{background-color:" + value + "!important;}")
         f.write("." + prefix + color + "-" + key.replace(" ", "-").lower() + "{color:" + value + "!important;}")
@@ -52,12 +55,14 @@ with open('dist/colors.min.css', 'w') as f:
 print("dist/colors.min.css > done")
 
 with open('dist/colors.less', 'w') as f:
+    f.write(copyLicence)
     for key, value in orderedColors.items():
         f.write("@" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";\n")
 
 print("dist/colors.less > done")
 
 with open('dist/colors.scss', 'w') as f:
+    f.write(copyLicence)
     for key, value in orderedColors.items():
         f.write("$" + prefix + "-" + key.replace(" ", "-").lower() + ": " + value + ";\n")
 
