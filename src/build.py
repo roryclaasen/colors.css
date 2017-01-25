@@ -38,8 +38,8 @@ os.chdir("..")
 with open('readme.md', 'w') as f:
     f.write(template)
     f.write('\n## Colors\n')
-    color_strings = ('![color](http://www.placehold.it/150/%s/ffffff&text=%s)' % (v[1:].lower(), k) for k, v in orderedColors.items())
-    f.write('\n'.join(sorted(color_strings)))
+    for key, value in orderedColors.items():
+        f.write(('![color](http://www.placehold.it/150/%s/ffffff&text=%s)\n' % (value, key)))
 
 print("readme.md > done")
 
