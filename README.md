@@ -189,7 +189,7 @@ To use as color use prefix
 ![color](http://www.placehold.it/150/fffaa0/ffffff&text=Rascal)
 ![color](http://www.placehold.it/150/358a5b/ffffff&text=Rebol)
 ![color](http://www.placehold.it/150/f50000/ffffff&text=Red)
-![color](http://www.placehold.it/150/ff7f7f/ffffff&text=Ren'Py)
+![color](http://www.placehold.it/150/ff7f7f/ffffff&text=RenPy)
 ![color](http://www.placehold.it/150/ecdebe/ffffff&text=Roff)
 ![color](http://www.placehold.it/150/cc0088/ffffff&text=Rouge)
 ![color](http://www.placehold.it/150/701516/ffffff&text=Ruby)

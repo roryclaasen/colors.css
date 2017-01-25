@@ -12,7 +12,8 @@ replace_names = {
     'Objective-C++': 'Objective-Cpp',
     'C#': 'C Sharp',
     'F#': 'F Sharp',
-    'NetLinx+ERB': 'NetLinx-ERB'
+    'NetLinx+ERB': 'NetLinx-ERB',
+    'Ren\'Py': 'RenPy'
 }
 
 copyLicence = "/*\nCopyright (c) 2016-2017 Rory Claasen\nThe MIT License (MIT)\n*/\n"
