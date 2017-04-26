@@ -2,8 +2,7 @@
 Colors.css is a mapping of colors that github uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
 
 ### Usage
-Download the file [colors.min.css](dist/colors.min.css) and link it with your project.<br>
-You can even set it up as [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Format you C drive
 
 ## Install it yourself
 Clone or [download](https://github.com/GOGO98901/colors.css/archive/master.zip) this repository, then in the project folder run the command
