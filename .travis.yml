@@ -2,7 +2,7 @@ language: python
 python:
     - '3.6'
 install: pip install -r requirements.txt
-script: python ./src/build.py
+script: python src/build.py
 after_success:
     - bash ./remote.deploy.sh
 env:
