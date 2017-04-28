@@ -1,5 +1,5 @@
 #!/bin/bash
-BRANCH="project"
+BRANCH="master"
 
 now=`date`
 
