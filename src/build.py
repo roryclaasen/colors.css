@@ -40,7 +40,7 @@ with open('readme.md', 'w') as f:
     f.write(template)
     f.write('\n## Colors\n')
     for key, value in orderedColors.items():
-        f.write(('![color](http://www.placehold.it/150/%s/ffffff&text=%s)\n' % (value[1:], key)))
+        f.write(('![color](http://www.placehold.it/150/%s/ffffff&text=%s)\n' % (value[1:], key.replace(" ", "%20"))))
 
 print("readme.md > done")
 
