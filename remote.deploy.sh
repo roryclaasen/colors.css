@@ -9,7 +9,7 @@ if [ "$TRAVIS_BRANCH" == "$BRANCH" ]; then
 
 	git add dist
 	git commit -m "Built colors.css by Travis CI, Build $TRAVIS_BUILD_NUMBER ($now)"
-	git push --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
+	git push --quiet "https://${GH_TOKEN}@github.com/${GH_REPO}.git"
 else
 	echo "Branch is not $BRANCH. Skipping deploy!"
 fi
