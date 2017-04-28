@@ -30,6 +30,9 @@ colors = dict((replace_names.get(name, name), color['color']) for name, color in
 
 orderedColors = collections.OrderedDict(sorted(colors.items()))
 
+if os.path.exists("src"):
+    os.chdir("src")
+
 template = "# colors.css"
 with open('readmetemplate.md', 'r') as f:
     template = f.read()
