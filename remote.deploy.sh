@@ -6,6 +6,7 @@ if [ "$TRAVIS_BRANCH" == "$BRANCH" ]; then
 
 	git config --global user.email "travis@travis-ci.org"
 	git config --global user.name "Travis CI"
+    git config --global push.default simple
 
 	git add dist
 	git commit -m "Built colors.css by Travis CI, Build $TRAVIS_BUILD_NUMBER ($now)"
