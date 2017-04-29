@@ -1,18 +1,22 @@
-# colors.css
+# colors.css [![Build Status](https://travis-ci.org/GOGO98901/colors.css.svg?branch=master)](https://travis-ci.org/GOGO98901/colors.css)
+
 Colors.css is a mapping of colors that github uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
 
 ### Usage
-Download the file [colors.min.css](dist/colors.min.css) and link it with your project.<br>
+
+Download the file [colors.min.css](dist/colors.min.css) and link it with your project. Also available are [sass](dist/colors.scss) and [less](dist/colors.less) files to use with your projects.<br>
 You can even set it up as [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 ## Install it yourself
+
 Clone or [download](https://github.com/GOGO98901/colors.css/archive/master.zip) this repository, then in the project folder run the command
 ```base
 pip install -r requirements.txt
 ```
-Then run `build.py` (an internet connection is required), inside the `dist` folder will contain the stylesheet.
+Then run `build.py` (an internet connection is required), inside the `dist` folder will contain the stylesheets.
 
 #### Implementation
+
 ```html
 <link rel="stylesheet" href="stylesheets/colors.min.css" />
 ```
