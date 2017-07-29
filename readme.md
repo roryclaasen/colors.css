@@ -109,7 +109,7 @@ To use as color use prefix
 ![color](http://www.placehold.it/150/e34c26/ffffff?text=HTML)
 ![color](http://www.placehold.it/150/878787/ffffff?text=Hack)
 ![color](http://www.placehold.it/150/0e60e3/ffffff?text=Harbour)
-![color](http://www.placehold.it/150/29b544/ffffff?text=Haskell)
+![color](http://www.placehold.it/150/5e5086/ffffff?text=Haskell)
 ![color](http://www.placehold.it/150/df7900/ffffff?text=Haxe)
 ![color](http://www.placehold.it/150/7790B2/ffffff?text=Hy)
 ![color](http://www.placehold.it/150/a3522f/ffffff?text=IDL)
