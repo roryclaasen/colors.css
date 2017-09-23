@@ -53,6 +53,7 @@ To use as color use prefix
 ![color](http://www.placehold.it/150/6E4C13/ffffff?text=Assembly)
 ![color](http://www.placehold.it/150/6594b9/ffffff?text=AutoHotkey)
 ![color](http://www.placehold.it/150/1C3552/ffffff?text=AutoIt)
+![color](http://www.placehold.it/150/FF5000/ffffff?text=Ballerina)
 ![color](http://www.placehold.it/150/C1F12E/ffffff?text=Batchfile)
 ![color](http://www.placehold.it/150/cd6400/ffffff?text=BlitzMax)
 ![color](http://www.placehold.it/150/d4bec1/ffffff?text=Boo)
