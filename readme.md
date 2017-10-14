@@ -230,6 +230,7 @@ To use as color use prefix
 ![color](http://www.placehold.it/150/cf142b/ffffff?text=Turing)
 ![color](http://www.placehold.it/150/2b7489/ffffff?text=TypeScript)
 ![color](http://www.placehold.it/150/a54c4d/ffffff?text=UnrealScript)
+![color](http://www.placehold.it/150/0298c3/ffffff?text=VCL)
 ![color](http://www.placehold.it/150/adb2cb/ffffff?text=VHDL)
 ![color](http://www.placehold.it/150/fbe5cd/ffffff?text=Vala)
 ![color](http://www.placehold.it/150/b2b7f8/ffffff?text=Verilog)
