@@ -116,6 +116,7 @@ To use as color use prefix
 ![color](http://www.placehold.it/150/df7900/ffffff?text=Haxe)
 ![color](http://www.placehold.it/150/7790B2/ffffff?text=Hy)
 ![color](http://www.placehold.it/150/a3522f/ffffff?text=IDL)
+![color](http://www.placehold.it/150/b30000/ffffff?text=Idris)
 ![color](http://www.placehold.it/150/a9188d/ffffff?text=Io)
 ![color](http://www.placehold.it/150/078193/ffffff?text=Ioke)
 ![color](http://www.placehold.it/150/FEFE00/ffffff?text=Isabelle)
