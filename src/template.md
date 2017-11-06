@@ -9,25 +9,35 @@ You can even set it up as [git submodule](https://git-scm.com/book/en/v2/Git-Too
 
 ## Install it yourself
 
-Clone or [download](https://github.com/GOGO98901/colors.css/archive/master.zip) this repository, then in the project folder run the command
-```base
-pip install -r requirements.txt
+Clone or [download](https://github.com/GOGO98901/colors.css/archive/node.js.zip) this repository, then in the project folder run the command
+
 ```
-Then run `build.py` (an internet connection is required), inside the `dist` folder will contain the stylesheets.
+npm install
+npm run build
+```
+
+Contained inside the `dist` folder are the updated stylesheets.
 
 #### Implementation
 
 ```html
 <link rel="stylesheet" href="stylesheets/colors.min.css" />
 ```
+
 ```css
 @import("colors.min.css")
 ```
+
 To use as background color use prefix
+
 ```
 .gh-bg-(language)
 ```
+
 To use as color use prefix
+
 ```
 .gh-(language)
 ```
+
+## Colors

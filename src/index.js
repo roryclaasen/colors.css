@@ -45,7 +45,7 @@ download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/
             }
         }
         var fileOptions = { flags: 'a' };
-        
+
         if (fs.existsSync('dist/colors.less')) fs.unlinkSync('dist/colors.less');
         var less = fs.createWriteStream('dist/colors.less', fileOptions);
 
@@ -55,9 +55,13 @@ download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/
         if (fs.existsSync('dist/colors.min.css')) fs.unlinkSync('dist/colors.min.css');
         var css = fs.createWriteStream('dist/colors.min.css', fileOptions);
 
+        var template = fs.readFileSync('src/template.md', 'utf8');
+        var readme = fs.createWriteStream('readme.md', { flags: 'w' });
+
         less.write(notice);
         scss.write(notice);
         css.write(notice);
+        readme.write(template);
 
         for (key in colors) {
             var color = colors[key];
@@ -65,10 +69,12 @@ download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/
             scss.write('$' + color['class'] + ': ' + color['color'] + ';' + endOfLine);
             css.write('.gh-' + color['class'] + '{color:' + color['color'] + ';}');
             css.write('.gh-bg-' + color['class'] + '{background-color:' + color['color'] + ';}');
+            readme.write('![' + key + '](http://www.placehold.it/150/' + color['color'].replace('#', '') + '/ffffff?text=' + key + ')' + endOfLine);
         }
         less.end();
         scss.end();
         css.end();
+        readme.end();
     } catch (e) {
         console.log(e);
     }
