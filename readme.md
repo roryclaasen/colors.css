@@ -1,4 +1,4 @@
-# colors.css [![Build Status](https://travis-ci.org/roryclaasen/colors.css.svg?branch=master)](https://travis-ci.org/roryclaasen/colors.css)
+# colors.css [![Build Status](https://travis-ci.org/roryclaasen/colors.css.svg?branch=node.js)](https://travis-ci.org/roryclaasen/colors.css)
 
 Colors.css is a mapping of colors that github uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
 
