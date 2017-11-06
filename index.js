@@ -69,8 +69,9 @@ download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/
             scss.write('$' + color['class'] + ': ' + color['color'] + ';' + endOfLine);
             css.write('.gh-' + color['class'] + '{color:' + color['color'] + ';}');
             css.write('.gh-bg-' + color['class'] + '{background-color:' + color['color'] + ';}');
-            readme.write('![' + key + '](http://www.placehold.it/150/' + color['color'].replace('#', '') + '/ffffff?text=' + key + ')' + endOfLine);
+            readme.write('![' + key + '](http://www.placehold.it/150/' + color['color'].replace('#', '') + '/ffffff?text=' + key.split(' ').join('%20') + ')' + endOfLine);
         }
+        
         less.end();
         scss.end();
         css.end();
