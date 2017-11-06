@@ -1,9 +1,9 @@
 language: node_js
 node_js:
   - "node"
-script: node index.js
+script: npm run build
 after_success:
-    - bash ./remote.deploy.sh
+    - bash ./travisdeploy.sh
 env:
     global:
         - GH_REPO: "roryclaasen/colors.css"

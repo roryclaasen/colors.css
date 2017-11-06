@@ -2,7 +2,7 @@
 Copyright (c) 2016-2017 Rory Claasen
 The MIT License (MIT)
 */
-var https = require('https');
+const util = require('util');
 var fs = require('fs');
 var yaml = require('js-yaml');
 var download = require('download-file')
@@ -65,13 +65,13 @@ download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/
 
         for (key in colors) {
             var color = colors[key];
-            less.write('@' + color['class'] + ': ' + color['color'] + ';' + endOfLine);
-            scss.write('$' + color['class'] + ': ' + color['color'] + ';' + endOfLine);
-            css.write('.gh-' + color['class'] + '{color:' + color['color'] + ';}');
-            css.write('.gh-bg-' + color['class'] + '{background-color:' + color['color'] + ';}');
-            readme.write('![' + key + '](http://www.placehold.it/150/' + color['color'].replace('#', '') + '/ffffff?text=' + key.split(' ').join('%20') + ')' + endOfLine);
+            less.write(util.format('@%s:%s;%s', color['class'], color['color'], endOfLine));
+            scss.write(util.format('$%s:%s;%s', color['class'], color['color'], endOfLine));
+            css.write(util.format('.gh-%s{color:%s;}', color['class'], color['color']));
+            css.write(util.format('.gh-bg-%s{background-color:%s;}', color['class'], color['color']));
+            readme.write(util.format('![%s](http://www.placehold.it/150/%s/ffffff?text=%s)%s', key, color['color'].replace('#', ''), key.split(' ').join('%20'), endOfLine));
         }
-        
+
         less.end();
         scss.end();
         css.end();
