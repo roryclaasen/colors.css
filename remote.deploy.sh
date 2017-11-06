@@ -1,5 +1,5 @@
 #!/bin/bash
-BRANCH="master"
+BRANCH="node.js"
 now=$(date)
 if [ "$TRAVIS_BRANCH" == "$BRANCH" ]; then
 	set -o errexit
