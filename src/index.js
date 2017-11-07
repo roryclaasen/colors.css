@@ -1,11 +1,13 @@
 /*
-Copyright (c) 2016-2017 Rory Claasen
-The MIT License (MIT)
+* Copyright (c) 2016-2017 Rory Claasen
+* The MIT License (MIT)
 */
+'use strict';
+
 const util = require('util');
 var fs = require('fs');
 var yaml = require('js-yaml');
-var download = require('download-file')
+var download = require('download-file');
 var endOfLine = require('os').EOL;
 
 var filename = 'languages.yml';
@@ -25,38 +27,49 @@ The MIT License (MIT)
 */
 `
 
-download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml', function(err){
-    if (err) console.log(err);
-    try {
-        var doc = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
-        fs.unlinkSync(filename);
+var newWriteStream = function(file, options) {
+    if (options === undefined) options = { flags: 'a' };
+    if (fs.existsSync(file)) fs.unlinkSync(file);
+    return fs.createWriteStream(file, options);
+}
 
-        var colors = {}
+var processColors = function(callback) {
+    download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml', function(err) {
+        if (err) callback(err, undefined);
+        else {
+            try {
+                var doc = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
+                fs.unlinkSync(filename);
 
-        for (var key in doc) {
-            var obj = doc[key];
-            if ('color' in obj) {
-                var keyClass = key;
-                if (keyClass in replace_names) keyClass = replace_names[key];
-                colors[key] = {
-                    'color': obj['color'],
-                    'class': keyClass.split(' ').join('-')
+                var colors = {}
+                for (var key in doc) {
+                    var obj = doc[key];
+                    if ('color' in obj) {
+                        var keyClass = key;
+                        if (keyClass in replace_names) keyClass = replace_names[key];
+                        colors[key] = {
+                            'color': obj['color'],
+                            'class': keyClass.split(' ').join('-')
+                        }
+                    }
                 }
+                callback(false, colors);
+            } catch(err) {
+                callback(err, undefined);
             }
         }
-        var fileOptions = { flags: 'a' };
+    });
+};
 
-        if (fs.existsSync('dist/colors.less')) fs.unlinkSync('dist/colors.less');
-        var less = fs.createWriteStream('dist/colors.less', fileOptions);
-
-        if (fs.existsSync('dist/colors.scss')) fs.unlinkSync('dist/colors.scss');
-        var scss = fs.createWriteStream('dist/colors.scss', fileOptions);
-
-        if (fs.existsSync('dist/colors.min.css')) fs.unlinkSync('dist/colors.min.css');
-        var css = fs.createWriteStream('dist/colors.min.css', fileOptions);
+processColors(function(err, colors) {
+    if (err) throw err;
+    if (colors != undefined) {
+        var less = newWriteStream('dist/colors.less');
+        var scss = newWriteStream('dist/colors.scss')
+        var css = newWriteStream('dist/colors.min.css')
 
         var template = fs.readFileSync('src/template.md', 'utf8');
-        var readme = fs.createWriteStream('readme.md', { flags: 'w' });
+        var readme = newWriteStream('readme.md', { flags: 'w' });
 
         less.write(notice);
         scss.write(notice);
@@ -76,7 +89,5 @@ download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/
         scss.end();
         css.end();
         readme.end();
-    } catch (e) {
-        console.log(e);
     }
 });
