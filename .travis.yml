@@ -3,7 +3,7 @@ node_js:
   - "node"
 script: npm run build
 after_success:
-    - bash ./deploy.sh
+    - bash ./scripts/deploy.sh
 env:
     global:
         - GH_REPO: "roryclaasen/colors.css"

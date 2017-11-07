@@ -1,24 +1,31 @@
 {
-  "name": "colors.css",
-  "version": "1.1.0",
-  "description": "GitHub colour codes for web development",
-  "main": "index.js",
-  "scripts": {
-    "build": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GOGO98901/colors.css.git"
-  },
-  "author": "@roryclaasen (http://roryclaasen.me)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GOGO98901/colors.css/issues"
-  },
-  "homepage": "https://github.com/GOGO98901/colors.css#readme",
-  "dependencies": {
-    "download-file": "^0.1.5",
-    "js-yaml": "^3.10.0"
-  }
+    "name": "colors.css",
+    "version": "1.1.0",
+    "description": "GitHub colour codes for web development",
+    "main": "index",
+    "scripts": {
+        "build": "node ./scripts/build.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "gh-color": "gh-color.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GOGO98901/colors.css.git"
+    },
+    "author": "@roryclaasen (http://roryclaasen.me)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GOGO98901/colors.css/issues"
+    },
+    "homepage": "https://github.com/GOGO98901/colors.css#readme",
+    "dependencies": {
+        "commander": "^2.11.0",
+        "download-file": "^0.1.5",
+        "js-yaml": "^3.10.0"
+    },
+    "devDependencies": {
+        "jshint": "^2.9.5"
+    }
 }
