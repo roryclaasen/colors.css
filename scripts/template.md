@@ -1,22 +1,49 @@
 # colors.css [![Build Status](https://travis-ci.org/roryclaasen/colors.css.svg?branch=node.js)](https://travis-ci.org/roryclaasen/colors.css)
 
-Colors.css is a mapping of colors that github uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
+Colors.css provides the colors that github uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
 
-### Usage
+### Stylesheets
 
-Download the file [colors.min.css](dist/colors.min.css) and link it with your project. Also available are [sass](dist/colors.scss) and [less](dist/colors.less) files to use with your projects.<br>
-You can even set it up as [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Download the file [colors.min.css](dist/colors.min.css) and link it with your project. Also available are [sass](dist/colors.scss) and [less](dist/colors.less) files to use with your projects.
 
 ## Install it yourself
 
 Clone or [download](https://github.com/GOGO98901/colors.css/archive/node.js.zip) this repository, then in the project folder run the command
 
 ```
-npm install
-npm run build
+> npm install
+```
+
+### CLI
+
+#### Usage
+
+```
+> gh-color
+
+  Usage: gh-color [options]
+
+  GitHub colour codes for web development
+
+
+  Options:
+
+    -V, --version  output the version number
+    -l, --less     Builds Less source file
+    -s, --scss     Builds Sass source file
+    -c, --css      Builds css source file
+    -a, --all      Builds all source files
+    -h, --help     output usage information
+```
+
+### Building yourself
+
+```
+> npm run build
 ```
 
 Contained inside the `dist` folder are the updated stylesheets.
+(This will also update the readme)
 
 #### Implementation
 

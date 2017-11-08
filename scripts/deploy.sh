@@ -9,6 +9,7 @@ if [ "$TRAVIS_BRANCH" == "$BRANCH" ]; then
     git config --global push.default simple
 
 	git add dist
+	git add package-lock.json
     git add readme.md
 	git commit -m "[ci skip] Built colors.css by Travis CI (Build: $TRAVIS_BUILD_NUMBER at $now)"
 	git push --quiet "https://${GH_TOKEN}@github.com/${GH_REPO}.git" HEAD:$BRANCH
