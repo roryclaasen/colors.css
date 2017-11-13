@@ -1,6 +1,6 @@
 {
     "name": "colors.css",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "GitHub colour codes for web development",
     "main": "index",
     "scripts": {
@@ -12,14 +12,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/GOGO98901/colors.css.git"
+        "url": "git+https://github.com/roryclaasen/colors.css.git"
     },
     "author": "@roryclaasen (http://roryclaasen.me)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/GOGO98901/colors.css/issues"
+        "url": "https://github.com/roryclaasen/colors.css/issues"
     },
-    "homepage": "https://github.com/GOGO98901/colors.css#readme",
+    "homepage": "https://github.com/roryclaasen/colors.css#readme",
     "dependencies": {
         "commander": "^2.11.0",
         "download-file": "^0.1.5",
