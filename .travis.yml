@@ -6,7 +6,9 @@ after_success:
     - bash ./scripts/deploy.sh
 env:
     global:
-        - GH_REPO: "roryclaasen/colors.css"
+        - GIT_NAME: Travis CI
+        - GIT_EMAIL: builds@travis-ci.org
+        - GIT_BRANCH: node.js
         - secure: BK8Nx6r6AYxV/UMvnps/r1DlJ9eqkakow8bnfL7T7h8rCoukcFCvXBJQf+aCEQHCgkb4/ndDRcoCzLeprOk9EjK072RCXkHDuRdzfDxdl0KRZRSrg/bo1vC/zXCEwu2OBfztgQ07OZAkzi6dj0lnqELdPSuVaBHJLaKEe0U0i2Osr0LzpiIPoJhiUAWY/O/W/9SSR8hwLqtEHT0jrf7Swe4pI0X/JK8wfRsDjHvbolHkEW7LbhRrLomMwaa1yQs3w1/pS5FHJNDpOQ6AAu+eclbF9osrfcGzHxcXcwwC6TceUTzMBx6+R4kMPyslDftHM1I9FXz+/Hy+LEIPjUeWY+JuQMNiKTKF8R9BxfuuIrfLABdYqFovYLYp/Ms9oDieTEPuRJRnJ+S7PP9hd/4tSuhR7iT07D2mQ4uTfShBgBlK7wYv6B8p6ZqzorfpZ71ZWDnJj+oePQ1BxNQCax+GD+A60hQTRSLWposgFDdgEiE8trrjpT6dq0D7liQ6tARgpNFB5/QyEIGeWdf86123Et/SNjg+vp557pJXEqLnF6jG+S/NoxyXA+foPiuSJfaQupQAw3rI26IlSQ+CgOogsLyT32MQh8SJPr6xKgT1l+xzfE/3FBkIWfRD6s37T04gyEGpYLr4t9wtV2uZLG1Ti3w9iiWAX6jTUsNTS7Irghs=
 cache:
   directories:
