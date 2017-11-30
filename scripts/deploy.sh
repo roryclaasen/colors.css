@@ -9,7 +9,7 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 
 	git add dist
     git add readme.md
-	git commit -m "[ci skip] Built colors.css (Build: $TRAVIS_BUILD_NUMBER at $$(date))"
+	git commit -m "[ci skip] Built colors.css (Build: $TRAVIS_BUILD_NUMBER at $now)"
 	git push --quiet "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" HEAD:$GIT_BRANCH
 else
 	echo "Branch is not $GIT_BRANCH. Skipping deploy!"
