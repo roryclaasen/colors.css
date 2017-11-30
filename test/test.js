@@ -1,3 +1,7 @@
+/*
+* Copyright (c) 2016-2017 Rory Claasen
+* The MIT License (MIT)
+*/
 const fs = require('fs');
 var assert = require('assert');
 

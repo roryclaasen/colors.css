@@ -39,7 +39,7 @@ color.processColors(function(err, colors) {
         readme.write(util.format('|:--:|:--:|%s', endOfLine));
         
         for (var key in color.replace_names) {
-            readme.write(util.format('|%s|%s|%s', key, color.replace_names[key], endOfLine));
+            readme.write(util.format('|%s|%s|%s', key, color.replace_names[key].replace(' ', '-'), endOfLine));
         }
 
         readme.write(util.format('%s### Preview%s', endOfLine, endOfLine + endOfLine));
