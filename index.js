@@ -4,14 +4,17 @@
 */
 const yaml = require('js-yaml'), download = require('download-file'), fs = require('fs');
 
-var replace_names = {
+const const_replace_names = {
     'C++': 'cpp',
     'Objective-C++': 'Objective-Cpp',
     'C#': 'C Sharp',
     'F#': 'F Sharp',
     'NetLinx+ERB': 'NetLinx-ERB',
-    'Ren\'Py': 'RenPy'
+    'Ren\'Py': 'RenPy',
+    '1C Enterprise': 'OneC-Enterprise'
 };
+
+exports.replace_names = const_replace_names;
 
 exports.copyright = `/*
 Copyright (c) 2016-2017 Rory Claasen
@@ -32,8 +35,7 @@ exports.processColors = function(callback) {
                 for (var key in doc) {
                     var obj = doc[key];
                     if ('color' in obj) {
-                        var keyClass = key;
-                        if (keyClass in replace_names) keyClass = replace_names[key];
+                        var keyClass = (key in const_replace_names) ? const_replace_names[key] : key;
                         colors[key] = {
                             'color': obj.color,
                             'class': keyClass.split(' ').join('-')

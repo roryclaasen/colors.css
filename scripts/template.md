@@ -66,5 +66,3 @@ To use as color use prefix
 ```
 .gh-(language)
 ```
-
-## Colors

@@ -30,7 +30,19 @@ color.processColors(function(err, colors) {
         less.write(color.copyright);
         scss.write(color.copyright);
         css.write(color.copyright);
-        readme.write(template);
+        readme.write(template + endOfLine);
+
+        readme.write(util.format('## Colors%s', endOfLine + endOfLine));
+        readme.write(util.format('### Name Changes%s', endOfLine + endOfLine));
+
+        readme.write(util.format('| Language | Css Identifier |%s', endOfLine));
+        readme.write(util.format('|:--:|:--:|%s', endOfLine));
+        
+        for (var key in color.replace_names) {
+            readme.write(util.format('|%s|%s|%s', key, color.replace_names[key], endOfLine));
+        }
+
+        readme.write(util.format('%s### Preview%s', endOfLine, endOfLine + endOfLine));
 
         for (var key in colors) {
             var data = colors[key];
