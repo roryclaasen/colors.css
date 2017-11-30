@@ -68,6 +68,21 @@ To use as color use prefix
 ```
 
 ## Colors
+
+### Name Changes
+
+| Language | Css Identifier |
+|:--:|:--:|
+|C++|cpp|
+|Objective-C++|Objective-Cpp|
+|C#|C Sharp|
+|F#|F Sharp|
+|NetLinx+ERB|NetLinx-ERB|
+|Ren'Py|RenPy|
+|1C Enterprise|OneC-Enterprise|
+
+### Preview
+
 ![1C Enterprise](http://www.placehold.it/150/814CCC/ffffff?text=1C%20Enterprise)
 ![ABAP](http://www.placehold.it/150/E8274B/ffffff?text=ABAP)
 ![AGS Script](http://www.placehold.it/150/B9D9FF/ffffff?text=AGS%20Script)
