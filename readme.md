@@ -75,8 +75,8 @@ To use as color use prefix
 |:--:|:--:|
 |C++|cpp|
 |Objective-C++|Objective-Cpp|
-|C#|C Sharp|
-|F#|F Sharp|
+|C#|C-Sharp|
+|F#|F-Sharp|
 |NetLinx+ERB|NetLinx-ERB|
 |Ren'Py|RenPy|
 |1C Enterprise|OneC-Enterprise|
