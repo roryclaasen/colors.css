@@ -26,6 +26,7 @@
     "js-yaml": "^3.10.0"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "node-sass": "^4.7.2"
   }
 }
