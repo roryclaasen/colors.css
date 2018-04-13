@@ -304,6 +304,7 @@ To use as color use prefix
 ![eC](http://www.placehold.it/150/913960/ffffff?text=eC)
 ![nesC](http://www.placehold.it/150/94B0C7/ffffff?text=nesC)
 ![ooc](http://www.placehold.it/150/b0b77e/ffffff?text=ooc)
+![sed](http://www.placehold.it/150/64b970/ffffff?text=sed)
 ![wdl](http://www.placehold.it/150/42f1f4/ffffff?text=wdl)
 ![wisp](http://www.placehold.it/150/7582D1/ffffff?text=wisp)
 ![xBase](http://www.placehold.it/150/403a40/ffffff?text=xBase)
