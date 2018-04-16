@@ -42,10 +42,14 @@ color.processColors(function(err, colors) {
             readme.write(util.format('|%s|%s|%s', key, color.replace_names[key].replace(' ', '-'), endOfLine));
         }
 
-        readme.write(util.format('%s### Preview%s', endOfLine, endOfLine + endOfLine));
-
-        for (var key in colors) {
-            var data = colors[key];
+		readme.write(util.format('%s### Preview%s', endOfLine, endOfLine + endOfLine));
+		
+		var orderedColors = {};
+		Object.keys(colors).sort().forEach(function(key) {
+			orderedColors[key] = colors[key];
+		});
+        for (var key in orderedColors) {
+			var data = orderedColors[key];
             less.write(util.format('@%s:%s;%s', data.class, data.color, endOfLine));
             scss.write(util.format('$%s:%s;%s', data.class, data.color, endOfLine));
             css.write(util.format('.gh-%s{color:%s;}', data.class, data.color));

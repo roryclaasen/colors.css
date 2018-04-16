@@ -37,10 +37,16 @@ else {
 
             if (less) less.write(color.copyright);
             if (scss) scss.write(color.copyright);
-            if (css) css.write(color.copyright);
+			if (css) css.write(color.copyright);
+			
+			var orderedColors = {};
 
-            for (var key in colors) {
-                var data = colors[key];
+			Object.keys(colors).sort().forEach(function(key) {
+				orderedColors[key] = colors[key];
+			});
+
+            for (var key in orderedColors) {
+                var data = orderedColors[key];
                 if (less) less.write(util.format('@%s:%s;%s', data.class, data.color, endOfLine));
                 if (scss) scss.write(util.format('$%s:%s;%s', data.class, data.color, endOfLine));
                 if (css) {
