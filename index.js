@@ -8,7 +8,8 @@ const const_replace_names = {
     'C++': 'cpp',
     'Objective-C++': 'Objective-Cpp',
     'C#': 'C Sharp',
-    'F#': 'F Sharp',
+	'F#': 'F Sharp',
+	'F*': 'F Star',
     'NetLinx+ERB': 'NetLinx-ERB',
     'Ren\'Py': 'RenPy',
     '1C Enterprise': 'OneC-Enterprise'
