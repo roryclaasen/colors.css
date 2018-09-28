@@ -277,6 +277,7 @@ To use as color use prefix
 ![Shell](http://www.placehold.it/150/89e051/ffffff?text=Shell)
 ![Shen](http://www.placehold.it/150/120F14/ffffff?text=Shen)
 ![Slash](http://www.placehold.it/150/007eff/ffffff?text=Slash)
+![Slice](http://www.placehold.it/150/003fa2/ffffff?text=Slice)
 ![Smalltalk](http://www.placehold.it/150/596706/ffffff?text=Smalltalk)
 ![Solidity](http://www.placehold.it/150/AA6746/ffffff?text=Solidity)
 ![SourcePawn](http://www.placehold.it/150/5c7611/ffffff?text=SourcePawn)
