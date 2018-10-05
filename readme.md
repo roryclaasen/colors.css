@@ -307,6 +307,7 @@ To use as color use prefix
 ![XC](http://www.placehold.it/150/99DA07/ffffff?text=XC)
 ![XQuery](http://www.placehold.it/150/5232e7/ffffff?text=XQuery)
 ![XSLT](http://www.placehold.it/150/EB8CEB/ffffff?text=XSLT)
+![YARA](http://www.placehold.it/150/220000/ffffff?text=YARA)
 ![YASnippet](http://www.placehold.it/150/32AB90/ffffff?text=YASnippet)
 ![Yacc](http://www.placehold.it/150/4B6C4B/ffffff?text=Yacc)
 ![Zephir](http://www.placehold.it/150/118f9e/ffffff?text=Zephir)
