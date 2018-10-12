@@ -125,7 +125,7 @@ To use as color use prefix
 ![Common Lisp](http://www.placehold.it/150/3fb68b/ffffff?text=Common%20Lisp)
 ![Common Workflow Language](http://www.placehold.it/150/B5314C/ffffff?text=Common%20Workflow%20Language)
 ![Component Pascal](http://www.placehold.it/150/B0CE4E/ffffff?text=Component%20Pascal)
-![Crystal](http://www.placehold.it/150/776791/ffffff?text=Crystal)
+![Crystal](http://www.placehold.it/150/000100/ffffff?text=Crystal)
 ![Cuda](http://www.placehold.it/150/3A4E3A/ffffff?text=Cuda)
 ![D](http://www.placehold.it/150/ba595e/ffffff?text=D)
 ![DM](http://www.placehold.it/150/447265/ffffff?text=DM)
