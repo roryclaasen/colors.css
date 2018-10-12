@@ -13,20 +13,5 @@ env:
 cache:
   directories:
     - "node_modules"
-before_deploy:
+after_success:
   - ./deploy.sh
-deploy:
-  provider: releases
-  api_key:
-    secure: ${GH_TOKEN}
-  file:
-    - "dist/colors.less"
-    - "dist/colors.min.css"
-    - "dist/colors.scss"
-  skip_cleanup: true
-  on:
-    repo: roryclaasen/colors.css
-    tags: false
-    all_branches: true
-  notifications:
-    email: false

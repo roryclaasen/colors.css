@@ -9,7 +9,7 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 
 	git remote add origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
 	git fetch --tags
-	
+
 	git add dist
     git add readme.md
 
@@ -21,6 +21,4 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 
 		git push --quiet origin $version
 	fi
-else
-	echo "Branch is not $GIT_BRANCH. Skipping deploy!"
-fi
+else echo "Branch is not $GIT_BRANCH. Skipping deploy!"; fi
