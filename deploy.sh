@@ -7,16 +7,19 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 	git config --global user.name "${GIT_NAME}"
     git config --global push.default simple
 
+	git remote add origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+	git fetch --tags
+	
 	git add dist
     git add readme.md
 
 	git commit -m "[ci skip] Built colors.css (Build: $TRAVIS_BUILD_NUMBER at $now)"
-	git push --quiet "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" HEAD:$GIT_BRANCH
+	git push --quiet origin $GIT_BRANCH
 
 	if ! git diff-index --quiet HEAD --; then
 		version=$(npm version patch)
 
-		git push --quiet "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git" origin $version
+		git push --quiet origin $version
 	fi
 else
 	echo "Branch is not $GIT_BRANCH. Skipping deploy!"
