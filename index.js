@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2016-2017 Rory Claasen
+* Copyright (c) 2016-2018 Rory Claasen
 * The MIT License (MIT)
 */
 const yaml = require('js-yaml'), download = require('download-file'), fs = require('fs');
@@ -18,7 +18,7 @@ const const_replace_names = {
 exports.replace_names = const_replace_names;
 
 exports.copyright = `/*
-Copyright (c) 2016-2017 Rory Claasen
+Copyright (c) 2016-2018 Rory Claasen
 The MIT License (MIT)
 */
 `;

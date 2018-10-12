@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-* Copyright (c) 2016-2017 Rory Claasen
+* Copyright (c) 2016-2018 Rory Claasen
 * The MIT License (MIT)
 */
 'use strict';
