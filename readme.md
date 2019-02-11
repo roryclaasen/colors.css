@@ -1,6 +1,6 @@
 # colors.css [![Build Status](https://travis-ci.org/roryclaasen/colors.css.svg?branch=node.js)](https://travis-ci.org/roryclaasen/colors.css)
 
-Colors.css provides the colors that github uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
+Colors.css provides the colors that GitHub uses to represent different programming languages in their "Languages" tab on each repository. This project allows you to uses these colors in your webpages, to view them click [here](#colors)
 
 ## Stylesheets
 
@@ -8,18 +8,19 @@ Download the file [colors.min.css](dist/colors.min.css) and link it with your pr
 
 ## Install it yourself
 
-Clone or [download](https://github.com/GOGO98901/colors.css/archive/node.js.zip) this repository, then in the project folder run the command
+Clone or [download](https://github.com/roryclaasen/colors.css/archive/node.js.zip) this repository, then in the project folder run the command
 
-```
-> npm install
+```shell
+$ npm install
+  ...
 ```
 
 ### CLI
 
 #### Usage
 
-```
-> gh-color
+```shell
+$ gh-color
 
   Usage: gh-color [options]
 
@@ -38,8 +39,9 @@ Clone or [download](https://github.com/GOGO98901/colors.css/archive/node.js.zip)
 
 ### Building yourself
 
-```
-> npm run build
+```shell
+$ npm run build
+  ...
 ```
 
 Contained inside the `dist` folder are the updated stylesheets.
