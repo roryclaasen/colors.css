@@ -23,6 +23,7 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 	git commit -m "[ci skip] Built colors.css (Build: $TRAVIS_BUILD_NUMBER at $now)"
 
 	if [ "$changed" = true ] ; then
+		# TODO Squash this commit
 		version=$(npm version patch)
 		git commit --amend -m "[ci skip] Build $TRAVIS_BUILD_NUMBER version update $version"
 		git push --quiet origin $version
