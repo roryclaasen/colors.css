@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-* Copyright (c) 2016-2018 Rory Claasen
+* Copyright (c) 2016-2019 Rory Claasen
 * The MIT License (MIT)
 */
 'use strict';
@@ -11,7 +11,7 @@ const pkg = require('./package.json');
 const endOfLine = require('os').EOL;
 const fs = require('fs');
 
-var color = require('./index');
+const color = require('./index');
 
 program.version(pkg.version).description(pkg.description)
 .option('-l, --less', 'Builds Less source file')
@@ -22,7 +22,7 @@ program.version(pkg.version).description(pkg.description)
 
 if (!(program.less || program.scss || program.css || program.all)) program.help();
 else {
-    var newWriteStream = function(file, options) {
+    const newWriteStream = function(file, options) {
         if (options === undefined) options = { flags: 'a' };
         if (fs.existsSync(file)) fs.unlinkSync(file);
         return fs.createWriteStream(file, options);
@@ -31,22 +31,22 @@ else {
     color.processColors(function(err, colors) {
         if (err) throw err;
         if (colors != undefined) {
-            var less = (program.less || program.all) ? newWriteStream('colors.less') : undefined;
-            var scss = (program.scss || program.all) ? newWriteStream('colors.scss') : undefined;
-            var css = (program.css || program.all) ? newWriteStream('colors.min.css') : undefined;
+            const less = (program.less || program.all) ? newWriteStream('colors.less') : undefined;
+            const scss = (program.scss || program.all) ? newWriteStream('colors.scss') : undefined;
+            const css = (program.css || program.all) ? newWriteStream('colors.min.css') : undefined;
 
             if (less) less.write(color.copyright);
             if (scss) scss.write(color.copyright);
 			if (css) css.write(color.copyright);
 			
-			var orderedColors = {};
+			const orderedColors = {};
 
 			Object.keys(colors).sort().forEach(function(key) {
 				orderedColors[key] = colors[key];
 			});
 
-            for (var key in orderedColors) {
-                var data = orderedColors[key];
+            for (const key in orderedColors) {
+                const data = orderedColors[key];
                 if (less) less.write(util.format('@%s:%s;%s', data.class, data.color, endOfLine));
                 if (scss) scss.write(util.format('$%s:%s;%s', data.class, data.color, endOfLine));
                 if (css) {

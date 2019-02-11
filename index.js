@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2016-2018 Rory Claasen
+* Copyright (c) 2016-2019 Rory Claasen
 * The MIT License (MIT)
 */
 const yaml = require('js-yaml'), download = require('download-file'), fs = require('fs');
@@ -18,25 +18,25 @@ const const_replace_names = {
 exports.replace_names = const_replace_names;
 
 exports.copyright = `/*
-Copyright (c) 2016-2018 Rory Claasen
+Copyright (c) 2016-2019 Rory Claasen
 The MIT License (MIT)
 */
 `;
 
 exports.processColors = function(callback) {
-    var filename = 'languages.yml';
+    const filename = 'languages.yml';
     download('https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml', function(err) {
         if (err) callback(err);
         else {
             try {
-                var doc = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
+                const doc = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
                 fs.unlinkSync(filename);
 
-                var colors = {};
-                for (var key in doc) {
-                    var obj = doc[key];
+                const colors = {};
+                for (const key in doc) {
+                    const obj = doc[key];
                     if ('color' in obj) {
-                        var keyClass = (key in const_replace_names) ? const_replace_names[key] : key;
+                        const keyClass = (key in const_replace_names) ? const_replace_names[key] : key;
                         colors[key] = {
                             'color': obj.color,
                             'class': keyClass.split(' ').join('-')
