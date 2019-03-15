@@ -184,6 +184,7 @@ To use as color use prefix
 ![Java](http://www.placehold.it/150/b07219/ffffff?text=Java)
 ![JavaScript](http://www.placehold.it/150/f1e05a/ffffff?text=JavaScript)
 ![Jolie](http://www.placehold.it/150/843179/ffffff?text=Jolie)
+![Jsonnet](http://www.placehold.it/150/0064bd/ffffff?text=Jsonnet)
 ![Julia](http://www.placehold.it/150/a270ba/ffffff?text=Julia)
 ![Jupyter Notebook](http://www.placehold.it/150/DA5B0B/ffffff?text=Jupyter%20Notebook)
 ![KRL](http://www.placehold.it/150/28430A/ffffff?text=KRL)
