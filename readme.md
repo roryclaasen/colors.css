@@ -314,6 +314,8 @@ To use as color use prefix
 ![YARA](http://www.placehold.it/150/220000/ffffff?text=YARA)
 ![YASnippet](http://www.placehold.it/150/32AB90/ffffff?text=YASnippet)
 ![Yacc](http://www.placehold.it/150/4B6C4B/ffffff?text=Yacc)
+![ZAP](http://www.placehold.it/150/0d665e/ffffff?text=ZAP)
+![ZIL](http://www.placehold.it/150/dc75e5/ffffff?text=ZIL)
 ![Zephir](http://www.placehold.it/150/118f9e/ffffff?text=Zephir)
 ![Zig](http://www.placehold.it/150/ec915c/ffffff?text=Zig)
 ![eC](http://www.placehold.it/150/913960/ffffff?text=eC)
