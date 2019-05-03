@@ -26,7 +26,7 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 		version=$(npm version patch)
 		git reset --soft HEAD~2
 		git commit -m "[ci skip] $version (Build $TRAVIS_BUILD_NUMBER at $now)"
-		git tag -fa $version
+		git tag -fa $version -m $version
 		git push -f --quiet origin $version
 	fi
 	

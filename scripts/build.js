@@ -20,6 +20,10 @@ var newWriteStream = function(file, options) {
 color.processColors(function(err, colors) {
     if (err) throw err;
     if (colors != undefined) {
+        if (!fs.existsSync('./dist')){
+            fs.mkdirSync('./dist');
+        }
+
         var less = newWriteStream('dist/colors.less');
         var scss =  newWriteStream('dist/colors.scss');
         var css = newWriteStream('dist/colors.min.css');
