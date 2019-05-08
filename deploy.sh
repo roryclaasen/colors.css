@@ -14,21 +14,15 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 	git add dist
     git add readme.md
 
-	changed=false
+	if git diff-index --quiet HEAD --; then
+		git commit -m "[ci skip] Build $TRAVIS_BUILD_NUMBER at $now"
 
-	if ! git diff-index --quiet HEAD --; then
-		changed=true
-	fi
-
-	git commit -m "[ci skip] Build $TRAVIS_BUILD_NUMBER at $now"
-
-	if [ "$changed" = true ] ; then
 		version=$(npm version patch)
 		git reset --soft HEAD~2
 		git commit -m "[ci skip] $version (Build $TRAVIS_BUILD_NUMBER at $now)"
 		git tag -fa $version -m $version
+
 		git push -f --quiet origin $version
+		git push --quiet origin $GIT_BRANCH
 	fi
-	
-	git push --quiet origin $GIT_BRANCH
 else echo "Branch is not $GIT_BRANCH. Skipping deploy!"; fi
