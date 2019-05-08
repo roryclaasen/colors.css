@@ -11,7 +11,6 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 	git checkout $GIT_BRANCH
 	git fetch --tags
 
-	git add dist
     git add readme.md
 
 	if git diff-index --quiet HEAD --; then

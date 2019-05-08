@@ -5,7 +5,7 @@ This project allows you to uses these colors in your webpages, to view them clic
 
 ## Stylesheets
 
-Download the file [colors.min.css](dist/colors.min.css) and link it with your project. Also available are [sass](dist/colors.scss) and [less](dist/colors.less) files to use with your projects.
+Download the file [latest stylesheets](https://github.com/roryclaasen/colors.css/releases/latest) and link it with your project.
 
 ## Install it yourself
 
