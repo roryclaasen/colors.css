@@ -13,7 +13,8 @@ exports.replace_names = {
     'F*': 'F Star',
     'NetLinx+ERB': 'NetLinx-ERB',
     'Ren\'Py': 'RenPy',
-    '1C Enterprise': 'OneC-Enterprise'
+    '1C Enterprise': 'OneC-Enterprise',
+    'Visual Basic .NET': 'Visual Basic NET'
 };
 
 function convertYaml(data) {
