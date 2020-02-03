@@ -1,19 +1,25 @@
 #!/bin/bash
-now=$(date)
-if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
-	set -o errexit
 
-	git config --global user.email "${GIT_EMAIL}"
-	git config --global user.name "${GIT_NAME}"
+set -o errexit
+now=$(date)
+
+if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
+	git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+
+    git config --global user.email "${GIT_EMAIL}"
+    git config --global user.name "${GIT_NAME}"
     git config --global push.default simple
 
-	git remote set-url origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
-	git checkout $GIT_BRANCH
 	git fetch --tags
 
     git add readme.md
+    git stash
+	git checkout $GIT_BRANCH
+    git stash apply
 
-	if git diff-index --quiet HEAD --; then
+    if git diff-index --quiet HEAD --; then
+        echo "No changes"
+    else
 		git commit -m "[ci skip] Build $TRAVIS_BUILD_NUMBER at $now"
 
 		version=$(npm version patch)
