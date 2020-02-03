@@ -49,7 +49,7 @@ color.processColors.then(colors => {
     readme.write(`|:--:|:--:|${endOfLine}`);
 
     for (var key in color.replace_names) {
-        readme.write(`|${key}|${color.replace_names[key].replace(' ', '-')}|${endOfLine}`);
+        readme.write(`|${key}|${color.replace_names[key].replace(/ /g, '-')}|${endOfLine}`);
     }
 
     readme.write(`${endOfLine}### Preview${endOfLine + endOfLine}`);
@@ -62,7 +62,7 @@ color.processColors.then(colors => {
         scss.write(`$${data.class}:${data.color};${endOfLine}`);
         css.write(`.gh-${data.class}{color:${data.color};}`);
         css.write(`.gh-bg-${data.class}{background-color:${data.color};}`);
-        readme.write(`![${key}](http://www.placehold.it/150/${data.color.replace('#', '')}/ffffff?text=${key.split(' ').join('%20')})${endOfLine}`);
+        readme.write(`![${key}](http://www.placehold.it/150/${data.color.replace('#', '')}/ffffff?text=${key.split(/ /g).join('%20')})${endOfLine}`);
     }
 
     less.end();
