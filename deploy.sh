@@ -8,7 +8,6 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 
     git config --global user.email "${GIT_EMAIL}"
     git config --global user.name "${GIT_NAME}"
-    git config --global push.default simple
 
     git fetch --tags
 
@@ -24,7 +23,7 @@ if [ "$TRAVIS_BRANCH" == "$GIT_BRANCH" ]; then
 		git tag -fa $version -m $version
 
         git push -f --quiet origin $version
-		git push --quiet origin $GIT_BRANCH
+		git push -f --quiet origin $GIT_BRANCH
 
     else echo "No changes have been detected"; fi
 else echo "Branch is not $GIT_BRANCH. Skipping deploy!"; fi
