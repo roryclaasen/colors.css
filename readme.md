@@ -1,4 +1,4 @@
-# colors.css [![Build Status](https://travis-ci.org/roryclaasen/colors.css.svg?branch=node.js)](https://travis-ci.org/roryclaasen/colors.css)
+# colors.css ![Node.js CI](https://github.com/roryclaasen/colors.css/workflows/Node.js%20CI/badge.svg?branch=node.js)
 
 Colors.css provides the colors that GitHub uses to represent different programming languages in their "Languages" tab on each repository.
 This project allows you to uses these colors in your webpages, to view them click [here](#colors).
@@ -134,6 +134,7 @@ To use as color use prefix
 ![Cuda](http://www.placehold.it/150/3A4E3A/ffffff?text=Cuda)
 ![D](http://www.placehold.it/150/ba595e/ffffff?text=D)
 ![DM](http://www.placehold.it/150/447265/ffffff?text=DM)
+![Dafny](http://www.placehold.it/150/FFEC25/ffffff?text=Dafny)
 ![Dart](http://www.placehold.it/150/00B4AB/ffffff?text=Dart)
 ![DataWeave](http://www.placehold.it/150/003a52/ffffff?text=DataWeave)
 ![Dhall](http://www.placehold.it/150/dfafff/ffffff?text=Dhall)
@@ -212,6 +213,7 @@ To use as color use prefix
 ![MQL4](http://www.placehold.it/150/62A8D6/ffffff?text=MQL4)
 ![MQL5](http://www.placehold.it/150/4A76B8/ffffff?text=MQL5)
 ![MTML](http://www.placehold.it/150/b7e1f4/ffffff?text=MTML)
+![Macaulay2](http://www.placehold.it/150/d8ffff/ffffff?text=Macaulay2)
 ![Makefile](http://www.placehold.it/150/427819/ffffff?text=Makefile)
 ![Mask](http://www.placehold.it/150/f97732/ffffff?text=Mask)
 ![Max](http://www.placehold.it/150/c4a79c/ffffff?text=Max)
@@ -240,6 +242,7 @@ To use as color use prefix
 ![Odin](http://www.placehold.it/150/60AFFE/ffffff?text=Odin)
 ![Omgrofl](http://www.placehold.it/150/cabbff/ffffff?text=Omgrofl)
 ![Opal](http://www.placehold.it/150/f7ede0/ffffff?text=Opal)
+![OpenQASM](http://www.placehold.it/150/AA70FF/ffffff?text=OpenQASM)
 ![Oxygene](http://www.placehold.it/150/cdd0e3/ffffff?text=Oxygene)
 ![Oz](http://www.placehold.it/150/fab738/ffffff?text=Oz)
 ![P4](http://www.placehold.it/150/7055b5/ffffff?text=P4)
