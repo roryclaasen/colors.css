@@ -4,9 +4,9 @@ on:
   schedule:
   - cron: "0 2 * * *"
   push:
-    branches: [ node.js ]
+    branches-ignore: [python]
   pull_request:
-    branches: [ node.js ]
+    branches-ignore: [python]
 
 jobs:
   build:
@@ -23,6 +23,10 @@ jobs:
     - run: npm ci
     - run: npm run build
     - run: npm test
+    - uses: actions/upload-artifact@v2
+      with:
+        name: build-artifact
+        path: dist/
       
   deploy:
     needs: build
