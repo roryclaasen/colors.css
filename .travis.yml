@@ -21,13 +21,13 @@ after_success:
   - bash ./deploy.sh
 
 deploy:
-  provider: releases
-  api_key:
-    secure: $GH_TOKEN
-  file:
-    - "dist/colors.less"
-    - "dist/colors.scss"
-    - "dist/colors.min.css"
-  skip_cleanup: true
-  on:
-    tags: true
+  - provider: releases
+    edge: true
+    on:
+      tags: true
+    api_key:
+      secure: $GH_TOKEN
+    file:
+      - "dist/colors.less"
+      - "dist/colors.scss"
+      - "dist/colors.min.css"
