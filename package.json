@@ -9,7 +9,7 @@
     "build:ts": "tsc",
     "build:js": "node ./out/build.js",
     "lint": "tslint --project tsconfig.json",
-    "test": "mocha"
+    "test": "echo \"Need to write tests\""
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,6 @@
     "bent": "^7.3.1",
     "js-yaml": "^3.14.0",
     "less": "^3.11.1",
-    "mocha": "^7.2.0",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5",
