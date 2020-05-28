@@ -3,7 +3,12 @@
   "version": "2.0.0",
   "description": "GitHub colour codes for web development",
   "scripts": {
-    "build": "tsc -p tsconfig.json src/*.ts",
+    "clean": "rimraf dist out",
+    "start": "npm-run-all clean build",
+    "build": "npm-run-all build:ts build:js",
+    "build:ts": "tsc",
+    "build:js": "node ./out/build.js",
+    "lint": "tslint --project tsconfig.json",
     "test": "mocha"
   },
   "repository": {
@@ -25,8 +30,11 @@
     "less": "^3.11.1",
     "mocha": "^7.2.0",
     "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
+    "rimraf": "^3.0.2",
     "ts-lint": "^4.5.1",
     "tslint": "^6.1.2",
     "tslint-microsoft-contrib": "^6.2.0",

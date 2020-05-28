@@ -64,7 +64,7 @@ The MIT License (MIT)
 });
 
 getLanguages(new Linguist(config.languagesUrl)).then(languages => {
-    const distFolder = path.resolve(__dirname, 'dist');
+    const distFolder = path.resolve(__dirname, '..', 'dist');
     if (!fs.existsSync(distFolder)) {
         fs.mkdirSync(distFolder);
     }

@@ -10,7 +10,7 @@ type StreamOptions = string | {
     emitClose?: boolean;
     start?: number;
     highWaterMark?: number;
-}
+};
 
 export default class FileSaver {
     private path: PathLike;
