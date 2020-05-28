@@ -18,9 +18,13 @@ jobs:
       with:
         node-version: 12
     - run: npm ci
-    - run: npm lint
-    - run: npm run start
-    - run: npm test
+    - name: Lint Typescript
+      continue-on-error: true
+      run: npm run lint
+    - name: Build Package
+      run: npm run start
+    - name: Test
+      run: npm test
     - uses: actions/upload-artifact@v2
       with:
         path: dist/**
@@ -36,7 +40,8 @@ jobs:
       with:
         node-version: 12
     - run: npm ci
-    - run: npm run start
+    - name: Build Package
+      run: npm run start
     - name: Has Changes
       id: changes
       uses: UnicornGlobal/has-changes-action@v1.0.11
