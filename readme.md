@@ -161,6 +161,7 @@ To use as color use prefix
 ![Fortran](http://www.placehold.it/150/4d41b1/ffffff?text=Fortran)
 ![FreeMarker](http://www.placehold.it/150/0050b2/ffffff?text=FreeMarker)
 ![Frege](http://www.placehold.it/150/00cafe/ffffff?text=Frege)
+![Futhark](http://www.placehold.it/150/5f021f/ffffff?text=Futhark)
 ![G-code](http://www.placehold.it/150/D08CF2/ffffff?text=G-code)
 ![GAML](http://www.placehold.it/150/FFC766/ffffff?text=GAML)
 ![GDScript](http://www.placehold.it/150/355570/ffffff?text=GDScript)
