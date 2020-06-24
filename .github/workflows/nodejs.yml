@@ -11,6 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      hasChanged: ${{ steps.changes.outputs.changed }}
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 12
@@ -30,10 +32,13 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         path: dist/**
+    - name: Set Has Changed
+      id: changes
+      uses: UnicornGlobal/has-changes-action@v1.0.11
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && needs.build.outputs.hasChanged
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -44,11 +49,7 @@ jobs:
     - run: npm ci
     - name: Build Package
       run: npm run start
-    - name: Has Changes
-      id: changes
-      uses: UnicornGlobal/has-changes-action@v1.0.11
     - name: Commit Changes
-      if: steps.changes.outputs.changed == 1
       run: |
         git config --local user.email "2751799+roryclaasen@users.noreply.github.com"
         git config --local user.name "Rory Claasen [Bot]"
