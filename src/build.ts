@@ -39,9 +39,10 @@ const transformLangName = (name: string) => {
 };
 
 const languageToStyle = (language: Language): IStyle => {
-    const name = transformLangName(language.name);
+    const className = transformLangName(language.name);
     return {
-        className: name,
+        name: language.name,
+        className,
         color: language.color
     };
 };
@@ -54,14 +55,48 @@ const getLanguages = (linguist: Linguist) => linguist.get()
     .then(sortList);
 
 const writeStyleWrtiers = (styleWriters: StyleWriter[], styles: IStyle[]) => styleWriters.forEach(writer => {
-    writer.open({ flags: 'wx' });
-    writer.writeLine(`/*
+    try {
+        writer.open({ encoding: 'utf8', flags: 'wx' }, true);
+        writer.writeLine(`/*
 Copyright (c) 2016-2020 Rory Claasen
 The MIT License (MIT)
 */`);
-    styles.forEach(style => writer.writeStyle(style));
-    writer.close();
+        styles.forEach(style => writer.writeStyle(style));
+    } finally {
+        writer.close();
+    }
 });
+
+const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[]) => {
+    if (!fs.existsSync(template)) {
+        throw new Error(`Unable to find template at '${template}'`);
+    }
+
+    const { keys } = config.replaceNames;
+
+    const templateContent = fs.readFileSync(template);
+
+    const templateWriter = new FileSaver(output);
+    try {
+        templateWriter.open({ encoding: 'utf8', flags: 'w' });
+        templateWriter.writeLine(templateContent);
+        templateWriter.writeLine('## Colors');
+        templateWriter.writeLine('');
+        templateWriter.writeLine('### Name Changes');
+        templateWriter.writeLine('');
+        templateWriter.writeLine('| Language | Css Identifier |');
+        templateWriter.writeLine('|:---|:---|');
+        keys
+            .filter(key => key !== 'default')
+            .forEach(key => templateWriter.writeLine(`| ${key} | ${transformLangName(key)} |`) );
+        templateWriter.writeLine('');
+        templateWriter.writeLine('### Preview');
+        templateWriter.writeLine('');
+        styles.forEach(style => templateWriter.writeLine(`![${style.name}](http://www.placehold.it/150/${style.color.replace('#', '')}/ffffff?text=${style.className})`));
+    } finally {
+        templateWriter.close();
+    }
+};
 
 getLanguages(new Linguist(config.languagesUrl)).then(languages => {
     const distFolder = path.resolve(__dirname, '..', 'dist');
@@ -77,4 +112,6 @@ getLanguages(new Linguist(config.languagesUrl)).then(languages => {
     styleWriters.push(new StyleWriter(path.resolve(distFolder, 'colors.min.css'), (style: IStyle) => `.gh-${style.className}{color:${style.color};}.gh-bg-${style.className}{background-color:${style.color};}`, false));
 
     writeStyleWrtiers(styleWriters, styles);
+    writeReadme(path.resolve(__dirname, '..', 'src', 'template.md'), path.resolve(__dirname, '..', 'readme.md'), styles);
 });
+

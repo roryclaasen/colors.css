@@ -21,10 +21,7 @@ export default class FileSaver {
         this.path = path;
     }
 
-    private createStream = (path: PathLike, options?: StreamOptions) => {
-        if (fs.existsSync(path)) fs.unlinkSync(path);
-        return fs.createWriteStream(path, options);
-    }
+    private createStream = (path: PathLike, options?: StreamOptions) => fs.createWriteStream(path, options);
 
     public write = (chunk: any) => {
         if (this.stream === undefined) throw new Error('Stream is not open');
@@ -36,8 +33,11 @@ export default class FileSaver {
         this.write(EOL);
     }
 
-    public open(options?: StreamOptions) {
+    public open(options?: StreamOptions, unlink?: boolean) {
         if (this.stream !== undefined) throw new Error('Stream is already open');
+        if (unlink === true) {
+            if (fs.existsSync(this.path)) fs.unlinkSync(this.path);
+        }
         this.stream = this.createStream(this.path, options);
     }
 

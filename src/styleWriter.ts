@@ -3,6 +3,7 @@ import { PathLike } from 'fs';
 import FileSaver from './fileSaver';
 
 export interface IStyle {
+    name: string;
     className: string;
     color: string;
 }
