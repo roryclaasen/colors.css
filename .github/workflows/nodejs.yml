@@ -17,10 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Decide
-      if: github.event == 'push'
       id: decision
       run: |
-        if [ ${{ github.event == "push" }}];
+        if [ ${{ github.event }} == "push"];
         then
           message=$(git show -s --format=%B)
           if [[ $messgae =~ ^Updates version to.* ]];
