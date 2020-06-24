@@ -23,13 +23,15 @@ jobs:
           message=$(git show -s --format=%B)
           regex='^Updates version to.*'
           if [[ $messgae =~ $regex ]]; then
-            echo "::set-output name=decision::true"
-          else
             echo "::set-output name=decision::false"
+          else
+            echo "::set-output name=decision::true"
           fi
         else
           echo "::set-output name=decision::true"
         fi
+
+        echo ${{ outputs.decision }}
   build:
     needs: decideCanBuild
     if: needs.decideCanBuild.outputs.decision == true
