@@ -10,10 +10,14 @@ on:
 
 jobs:
   build:
+    # if: startsWith('Hello world', 'Updates version to') == false
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
     steps:
+    - name: Print GitHub event action
+      run: |
+           echo "${{ github.event.action }}"
     - uses: actions/checkout@v2
     - name: Use Node.js 12
       uses: actions/setup-node@v1
@@ -55,10 +59,10 @@ jobs:
         git config --local user.name "Rory Claasen [Bot]"
         now=$(date)
         git add readme.md
-        git commit -m "[ci skip] Updates readme with latest changes"
+        git commit -m "Updates readme with latest changes"
         version=$(npm version patch)
         git reset --soft HEAD~2
-        git commit -m "[ci skip] Updates version to $version"
+        git commit -m "Updates version to $version"
         git tag -fa $version -m $version
     - name: Push Changes
       uses: ad-m/github-push-action@master
