@@ -33,12 +33,11 @@ jobs:
 
   build:
     needs: decideCanBuild
-    # if:  needs.decideCanBuild.outputs.decision == true
+    if: needs.decideCanBuild.outputs.decision
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
     steps:
-    - run: echo ${{ needs.decideCanBuild.outputs.decision }}
     - uses: actions/checkout@v2
     - name: Use Node.js 12
       uses: actions/setup-node@v1
