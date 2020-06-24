@@ -33,7 +33,7 @@ jobs:
 
   build:
     needs: decideCanBuild
-    if: needs.decideCanBuild.outputs.decision == true
+    if: needs.decideCanBuild.outputs.decision == "true"
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
