@@ -10,7 +10,7 @@ on:
 
 jobs:
   decideCanBuild:
-    name: Decide if build can run
+    name: Can Build Run?
     runs-on: ubuntu-latest
     outputs:
       decision: ${{ steps.decision.outputs.decision }}
@@ -19,7 +19,7 @@ jobs:
     - name: Decide
       id: decision
       run: |
-        if [ ${{ github.event }} == "push"];
+        if [ ${{ github.event_name }} == "push"];
         then
           message=$(git show -s --format=%B)
           if [[ $messgae =~ ^Updates version to.* ]];
