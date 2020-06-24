@@ -57,7 +57,7 @@ jobs:
         git commit -m "[ci skip] Updates readme with latest changes"
         version=$(npm version patch)
         git reset --soft HEAD~2
-        git commit -m "[ci skip] Updateds version to $version"
+        git commit -m "[ci skip] Updates version to $version"
         git tag -fa $version -m $version
     - name: Push Changes
       if: steps.changes.outputs.changed == 1
