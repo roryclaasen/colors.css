@@ -75,7 +75,7 @@ jobs:
       run: npm run start
     - name: Commit Changes
       run: |
-        git config --local user.email "2751799+roryclaasen@users.noreply.github.com"
+        git config --local user.email "contact@roryclaasen.dev"
         git config --local user.name "Rory Claasen [Bot]"
         now=$(date)
         git add readme.md
