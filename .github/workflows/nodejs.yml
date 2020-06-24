@@ -13,11 +13,11 @@ jobs:
     name: Can Build Run?
     runs-on: ubuntu-latest
     outputs:
-      decision: ${{ steps.decision.outputs.decision }}
+      decision: ${{ steps.decide.outputs.decision }}
     steps:
     - uses: actions/checkout@v2
     - name: Decide
-      id: decision
+      id: decide
       run: |
         if [ "${{ github.event_name }}" == "push" ]; then
           message=$(git show -s --format=%B)
@@ -33,7 +33,7 @@ jobs:
 
   build:
     needs: decideCanBuild
-    if: needs.decideCanBuild.outputs.decision == "true"
+    if: ${{ needs.decideCanBuild.outputs.decision == "true" }}
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
