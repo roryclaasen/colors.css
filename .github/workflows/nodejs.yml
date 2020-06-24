@@ -30,8 +30,8 @@ jobs:
         else
           echo "::set-output name=decision::true"
         fi
-
         echo ${{ outputs.decision }}
+
   build:
     needs: decideCanBuild
     if: needs.decideCanBuild.outputs.decision == true
