@@ -9,15 +9,36 @@ on:
     branches: ["main"]
 
 jobs:
+  decideCanBuild:
+    name: Decide if build can run
+    runs-on: ubuntu-latest
+    outputs:
+      decision: ${{ steps.decision.outputs.decision }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Decide
+      if: github.event == 'push'
+      id: decision
+      run: |
+        message=$(git show -s --format=%B)
+        if [[ $messgae =~ ^Updates version to.* ]];
+        then
+          echo "::set-output name=decision::true"
+        else
+          echo "::set-output name=decision::false"
+        fi
+    - name: Decide
+      if: github.event != 'push'
+      id: decision
+      run: echo "::set-output name=decision::true"
+
   build:
-    # if: startsWith('Hello world', 'Updates version to') == false
+    needs: decideCanBuild
+    if: needs.decideCanBuild.outputs.decision == true
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
     steps:
-    - name: Print GitHub event action
-      run: |
-           echo "${{ github.event_name }}"
     - uses: actions/checkout@v2
     - name: Use Node.js 12
       uses: actions/setup-node@v1
