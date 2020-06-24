@@ -21,7 +21,8 @@ jobs:
       run: |
         if [ "${{ github.event_name }}" == "push" ]; then
           message=$(git show -s --format=%B)
-          if [[ $messgae =~ ^Updates version to.* ]]; then
+          regex='^Updates version to.*'
+          if [[ $messgae =~ $regex ]]; then
             echo "::set-output name=decision::true"
           else
             echo "::set-output name=decision::false"
