@@ -5,20 +5,6 @@ This project allows you to uses these colors in your webpages, to view the diffr
 
 ## Colors
 
-### Name Changes
-
-| Language | Css Identifier |
-|:---|:---|
-| C++ | cpp |
-| Objective-C++ | ObjectiveCpp |
-| C# | CSharp |
-| F# | FSharp |
-| F* | FStar |
-| NetLinx+ERB | NetLinxERB |
-| Ren'Py | RenPy |
-| 1C Enterprise | OneCEnterprise |
-| Visual Basic .NET | VisualBasicNET |
-
 ### Preview
 
 ![1C Enterprise](http://www.placehold.it/150/814CCC/ffffff?text=OneCEnterprise)
