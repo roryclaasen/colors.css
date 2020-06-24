@@ -20,18 +20,18 @@ jobs:
       if: github.event == 'push'
       id: decision
       run: |
-        message=$(git show -s --format=%B)
-        if [[ $messgae =~ ^Updates version to.* ]];
+        if [ ${{ github.event == "push" }}];
         then
+          message=$(git show -s --format=%B)
+          if [[ $messgae =~ ^Updates version to.* ]];
+          then
           echo "::set-output name=decision::true"
-        else
+          else
           echo "::set-output name=decision::false"
+          fi
+        else
+          echo "::set-output name=decision::true"
         fi
-    - name: Decide
-      if: github.event != 'push'
-      id: decision
-      run: echo "::set-output name=decision::true"
-
   build:
     needs: decideCanBuild
     if: needs.decideCanBuild.outputs.decision == true
