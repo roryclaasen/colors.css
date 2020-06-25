@@ -4,7 +4,8 @@ on:
   schedule:
   - cron: "0 2 * * *"
   push:
-    branches: ["main"]
+    branches:
+    - main
 
 jobs:
 #   decideCanBuild:
@@ -36,7 +37,8 @@ jobs:
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
     - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
@@ -45,7 +47,7 @@ jobs:
       run: npm ci
     - name: Build Package
       run: npm run start
-    - name: Test
+    - name: Test Package
       run: npm test
     - name: Set Has Changed
       id: changes
@@ -53,15 +55,19 @@ jobs:
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main' && needs.build.outputs.hasChanged == 1
+    if: needs.build.outputs.hasChanged == 1
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.WORKFLOW_TOKEN }}
     - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: 12
-    - run: npm ci
+    - name: Install Dependencies
+      run: npm ci
     - name: Build Package
       run: npm run start
     - name: Commit Changes
@@ -76,13 +82,6 @@ jobs:
         git commit -m "Updates version to $version"
         git tag -fa $version -m $version
     - name: Push Changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
-        tags: false
-
-    - name: Push Tags
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.WORKFLOW_TOKEN }}
