@@ -43,4 +43,12 @@ jobs:
           VALIDATE_JSON: false
           VALIDATE_MD: true
           VALIDATE_TYPESCRIPT_ES: true
-          VALIDATE_TYPESCRIPT_STANDARD: true
+          VALIDATE_TYPESCRIPT_STANDARD: false
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Lint Package
+        run: npm run lint
