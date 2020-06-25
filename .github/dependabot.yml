@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    versioning-strategy: auto
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    assignees:
+      - "roryclaasen"
