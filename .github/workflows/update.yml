@@ -8,31 +8,7 @@ on:
     - main
 
 jobs:
-#   decideCanBuild:
-#     name: Can Build Run?
-#     runs-on: ubuntu-latest
-#     outputs:
-#       decision: ${{ steps.decide.outputs.decision }}
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Decide
-#       id: decide
-#       run: |
-#         if [ "${{ github.event_name }}" == "push" ]; then
-#           message=$(git show -s --format=%B)
-#           regex='^Updates version to.*'
-#           if [[ $messgae =~ $regex ]]; then
-#             echo "::set-output name=decision::false"
-#           else
-#             echo "::set-output name=decision::true"
-#           fi
-#         else
-#           echo "::set-output name=decision::true"
-#         fi
-
   build:
-    # needs: decideCanBuild
-    # if: needs.decideCanBuild.outputs.decision
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
