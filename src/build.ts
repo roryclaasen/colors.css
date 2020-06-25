@@ -92,7 +92,7 @@ const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[
         templateWriter.writeLine('');
         templateWriter.writeLine('### Preview');
         templateWriter.writeLine('');
-        styles.forEach(style => templateWriter.writeLine(`![${style.name}](http://www.placehold.it/150/${style.color.replace('#', '')}/ffffff?text=${style.className})`));
+        styles.forEach(style => templateWriter.write(`![${style.name}](http://www.placehold.it/150/${style.color.replace('#', '')}/ffffff?text=${style.className})`));
     } finally {
         templateWriter.close();
     }
