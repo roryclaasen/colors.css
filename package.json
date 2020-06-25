@@ -1,6 +1,6 @@
 {
   "name": "colors.css-test",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "GitHub colour codes for web development",
   "scripts": {
     "clean": "rimraf dist out",
