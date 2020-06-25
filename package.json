@@ -1,5 +1,5 @@
 {
-  "name": "colors.css",
+  "name": "colors.css-test",
   "version": "2.0.10",
   "description": "GitHub colour codes for web development",
   "scripts": {
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roryclaasen/colors.css.git"
+    "url": "git+https://github.com/roryclaasen/colors.css-test.git"
   },
   "author": "Rory Claasen (https://roryclaasen.dev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/roryclaasen/colors.css/issues"
+    "url": "https://github.com/roryclaasen/colors.css-test/issues"
   },
-  "homepage": "https://github.com/roryclaasen/colors.css",
+  "homepage": "https://github.com/roryclaasen/colors.css-test",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
