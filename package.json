@@ -21,6 +21,9 @@
     "url": "https://github.com/roryclaasen/colors.css/issues"
   },
   "homepage": "https://github.com/roryclaasen/colors.css",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/bent": "^7.0.2",
