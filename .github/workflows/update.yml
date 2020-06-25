@@ -7,31 +7,31 @@ on:
     branches: ["main"]
 
 jobs:
-  decideCanBuild:
-    name: Can Build Run?
-    runs-on: ubuntu-latest
-    outputs:
-      decision: ${{ steps.decide.outputs.decision }}
-    steps:
-    - uses: actions/checkout@v2
-    - name: Decide
-      id: decide
-      run: |
-        if [ "${{ github.event_name }}" == "push" ]; then
-          message=$(git show -s --format=%B)
-          regex='^Updates version to.*'
-          if [[ $messgae =~ $regex ]]; then
-            echo "::set-output name=decision::false"
-          else
-            echo "::set-output name=decision::true"
-          fi
-        else
-          echo "::set-output name=decision::true"
-        fi
+#   decideCanBuild:
+#     name: Can Build Run?
+#     runs-on: ubuntu-latest
+#     outputs:
+#       decision: ${{ steps.decide.outputs.decision }}
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Decide
+#       id: decide
+#       run: |
+#         if [ "${{ github.event_name }}" == "push" ]; then
+#           message=$(git show -s --format=%B)
+#           regex='^Updates version to.*'
+#           if [[ $messgae =~ $regex ]]; then
+#             echo "::set-output name=decision::false"
+#           else
+#             echo "::set-output name=decision::true"
+#           fi
+#         else
+#           echo "::set-output name=decision::true"
+#         fi
 
   build:
-    needs: decideCanBuild
-    if: needs.decideCanBuild.outputs.decision
+    # needs: decideCanBuild
+    # if: needs.decideCanBuild.outputs.decision
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
@@ -66,7 +66,7 @@ jobs:
       run: npm run start
     - name: Commit Changes
       run: |
-        git config --local user.email "contact@roryclaasen.dev"
+        git config --local user.email "2751799+roryclaasen@users.noreply.github.com"
         git config --local user.name "Rory Claasen [Bot]"
         now=$(date)
         git add readme.md
@@ -79,5 +79,12 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+        tags: false
+
+    - name: Push Tags
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.WORKFLOW_TOKEN }}
         branch: main
         tags: true
