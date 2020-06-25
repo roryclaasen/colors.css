@@ -3,7 +3,7 @@ import path from 'path';
 
 import FileSaver from './fileSaver';
 import Linguist, { ILanguage, ILanguageMap } from './linguist';
-import { getClassName, keys as classNameKeys } from './replaceNames';
+import classNames, { getClassName } from './replaceNames';
 import StyleWriter, { IStyle } from './styleWriter';
 
 const config = {
@@ -73,7 +73,7 @@ const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[
         templateWriter.writeLine('');
         templateWriter.writeLine('| Language | Css Identifier |');
         templateWriter.writeLine('|:---|:---|');
-        classNameKeys.forEach(key => templateWriter.writeLine(`| ${key} | ${getClassName(key)} |`));
+        classNames.forEach((className, key) => templateWriter.writeLine(`| ${key} | ${className} |`));
         templateWriter.writeLine('');
         templateWriter.writeLine('### Preview');
         templateWriter.writeLine('');
