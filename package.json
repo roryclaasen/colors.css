@@ -1,34 +1,54 @@
 {
   "name": "colors.css",
-  "version": "1.4.4",
+  "version": "2.0.0",
   "description": "GitHub colour codes for web development",
-  "main": "index",
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "test": "mocha"
-  },
-  "bin": {
-    "gh-color": "gh-color.js"
+    "clean": "rimraf dist out",
+    "start": "npm-run-all clean build",
+    "build": "npm-run-all build:ts build:js",
+    "build:ts": "tsc",
+    "build:js": "node ./out/build.js",
+    "lint": "tslint --project tsconfig.json",
+    "test": "echo \"Need to write tests\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roryclaasen/colors.css.git"
   },
-  "author": "Rory Claasen (https://roryclaasen.dev)",
+  "author": {
+    "name": "Rory Claasen",
+    "email": "contact@roryclaasen.dev"
+  },
+  "maintainers": [
+    {
+      "name": "Rory Claasen",
+      "email": "contact@roryclaasen.dev"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/roryclaasen/colors.css/issues"
   },
-  "homepage": "https://roryclaasen.dev/projects/node.js/colors-css.html",
-  "dependencies": {
-    "commander": "^4.1.1",
-    "js-yaml": "^3.13.1",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.5"
+  "homepage": "https://github.com/roryclaasen/colors.css",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@roryclaasen"
   },
+  "dependencies": {},
   "devDependencies": {
-    "less": "^3.10.3",
-    "mocha": "^7.0.1",
-    "node-sass": "^4.13.1"
+    "@types/bent": "^7.0.2",
+    "@types/js-yaml": "^3.12.5",
+    "bent": "^7.3.6",
+    "js-yaml": "^3.14.0",
+    "less": "^3.11.3",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "rimraf": "^3.0.2",
+    "ts-lint": "^4.5.1",
+    "tslint": "^6.1.2",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "^3.9.5"
   }
 }

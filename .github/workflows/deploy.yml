@@ -1,0 +1,102 @@
+name: Deploy Package
+
+on:
+  push:
+    tags: ["v**"]
+
+jobs:
+  test:
+    name: Test before Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Package
+        run: npm run start
+      - name: Test Package
+        run: npm test
+
+  publish-gpr:
+    name: Publish to Github Package Registry
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+          scope: '@roryclaasen'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build Package
+        run: npm run start
+      - name: Publish Package
+        run: npm publish
+        env:
+        #   NODE_AUTH_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  release-ghr:
+    name: Upload files to ${{ github.ref }}
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Package
+        run: npm run start
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload colors.less
+        id: upload-release-asset-less
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/colors.less
+          asset_name: colors.less
+          asset_content_type: text/css
+      - name: Upload colors.scss
+        id: upload-release-asset-scss
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/colors.scss
+          asset_name: colors.scss
+          asset_content_type: text/css
+      - name: Upload colors.min.css
+        id: upload-release-asset-css
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/colors.min.css
+          asset_name: colors.min.css
+          asset_content_type: text/css

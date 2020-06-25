@@ -1,0 +1,7 @@
+{
+  "recommendations":[
+    "fknop.vscode-npm",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "mike-co.import-sorter"
+  ]
+}
