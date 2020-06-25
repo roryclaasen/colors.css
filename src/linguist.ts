@@ -27,5 +27,5 @@ export default class Linguist {
 
     private fetch = () => requestBent(this.languagesUrl);
 
-    private transform = (value: string): ILanguageMap => yaml.safeLoad(value);
+    private transform = (value: string): ILanguageMap => yaml.safeLoad(value) as ILanguageMap;
 }

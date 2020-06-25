@@ -5,8 +5,7 @@
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "esnext",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "esModuleInterop": true
   },
   "include": [
     "src"

@@ -3,15 +3,11 @@ import path from 'path';
 
 import FileSaver from './fileSaver';
 import Linguist, { ILanguage, ILanguageMap } from './linguist';
-import * as replaceNamesJson from './replace_names.json';
+import { getClassName, keys as classNameKeys } from './replaceNames';
 import StyleWriter, { IStyle } from './styleWriter';
 
 const config = {
-    languagesUrl: 'https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml',
-    replaceNames: {
-        names: replaceNamesJson as { [name: string]: string },
-        keys: Object.keys(replaceNamesJson)
-    }
+    languagesUrl: 'https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml'
 };
 
 type Language = {
@@ -31,15 +27,8 @@ const transformMapToList = (map: ILanguageMap) => {
 
 const ensureHasColor = (list: Language[]) => list.filter(l => !!l.color);
 
-const transformLangName = (name: string) => {
-    const { names, keys } = config.replaceNames;
-
-    const langName = keys.includes(name) ? names[name] : name;
-    return langName.split(' ').join('');
-};
-
 const languageToStyle = (language: Language): IStyle => {
-    const className = transformLangName(language.name);
+    const className = getClassName(language.name);
     return {
         name: language.name,
         className,
@@ -72,8 +61,6 @@ const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[
         throw new Error(`Unable to find template at '${template}'`);
     }
 
-    const { keys } = config.replaceNames;
-
     const templateContent = fs.readFileSync(template);
 
     const templateWriter = new FileSaver(output);
@@ -86,9 +73,7 @@ const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[
         templateWriter.writeLine('');
         templateWriter.writeLine('| Language | Css Identifier |');
         templateWriter.writeLine('|:---|:---|');
-        keys
-            .filter(key => key !== 'default')
-            .forEach(key => templateWriter.writeLine(`| ${key} | ${transformLangName(key)} |`) );
+        classNameKeys.forEach(key => templateWriter.writeLine(`| ${key} | ${getClassName(key)} |`));
         templateWriter.writeLine('');
         templateWriter.writeLine('### Preview');
         templateWriter.writeLine('');
