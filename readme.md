@@ -186,7 +186,7 @@ $ npm install @roryclaasen/colors.css
 ![NetLogo](http://www.placehold.it/150/ff6375/ffffff?text=NetLogo)
 ![NewLisp](http://www.placehold.it/150/87AED7/ffffff?text=NewLisp)
 ![Nextflow](http://www.placehold.it/150/3ac486/ffffff?text=Nextflow)
-![Nim](http://www.placehold.it/150/37775b/ffffff?text=Nim)
+![Nim](http://www.placehold.it/150/ffc200/ffffff?text=Nim)
 ![Nit](http://www.placehold.it/150/009917/ffffff?text=Nit)
 ![Nix](http://www.placehold.it/150/7e7eff/ffffff?text=Nix)
 ![Nu](http://www.placehold.it/150/c9df40/ffffff?text=Nu)
