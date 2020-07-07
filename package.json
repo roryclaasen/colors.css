@@ -40,7 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^3.4.0",
     "@typescript-eslint/parser": "^3.4.0",
     "bent": "^7.3.7",
-    "eslint": "^7.3.1",
+    "eslint": "^7.4.0",
     "js-yaml": "^3.14.0",
     "less": "^3.11.3",
     "node-sass": "^4.14.1",
