@@ -149,6 +149,7 @@ $ npm install @roryclaasen/colors.css
 ![Jsonnet](http://www.placehold.it/150/0064bd/ffffff?text=Jsonnet)
 ![Julia](http://www.placehold.it/150/a270ba/ffffff?text=Julia)
 ![Jupyter Notebook](http://www.placehold.it/150/DA5B0B/ffffff?text=JupyterNotebook)
+![Kaitai Struct](http://www.placehold.it/150/773b37/ffffff?text=KaitaiStruct)
 ![Kotlin](http://www.placehold.it/150/F18E33/ffffff?text=Kotlin)
 ![KRL](http://www.placehold.it/150/28430A/ffffff?text=KRL)
 ![Lasso](http://www.placehold.it/150/999999/ffffff?text=Lasso)
