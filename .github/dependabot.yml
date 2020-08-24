@@ -2,7 +2,14 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    versioning-strategy: auto
+    versioning-strategy: lockfile-only
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    assignees:
+      - "roryclaasen"
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
