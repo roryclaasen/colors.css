@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.1
         with:
           node-version: 12
       - name: Restore Dependency Cache
@@ -37,7 +37,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.1
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
@@ -67,7 +67,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.1.1
         with:
           node-version: 12
       - name: Restore Dependency Cache
