@@ -11,7 +11,7 @@ const config = {
 };
 
 type Language = {
-    name: string
+    name: string;
 } & ILanguage;
 
 const transformMapToList = (map: ILanguageMap) => {
@@ -25,7 +25,7 @@ const transformMapToList = (map: ILanguageMap) => {
     return list;
 };
 
-const ensureHasColor = (list: Language[]) => list.filter(l => !!l.color);
+const ensureHasColor = (list: Language[]) => list.filter((l) => !!l.color);
 
 const languageToStyle = (language: Language): IStyle => {
     const className = getClassName(language.name);
@@ -38,23 +38,21 @@ const languageToStyle = (language: Language): IStyle => {
 
 const sortList = (list: Language[]) => list.sort((a, b) => a.name.localeCompare(b.name));
 
-const getLanguages = (linguist: Linguist) => linguist.get()
-    .then(transformMapToList)
-    .then(ensureHasColor)
-    .then(sortList);
+const getLanguages = (linguist: Linguist) => linguist.get().then(transformMapToList).then(ensureHasColor).then(sortList);
 
-const writeStyleWrtiers = (styleWriters: StyleWriter[], styles: IStyle[]) => styleWriters.forEach(writer => {
-    try {
-        writer.open({ encoding: 'utf8', flags: 'wx' }, true);
-        writer.writeLine(`/*
+const writeStyleWrtiers = (styleWriters: StyleWriter[], styles: IStyle[]) =>
+    styleWriters.forEach((writer) => {
+        try {
+            writer.open({ encoding: 'utf8', flags: 'wx' }, true);
+            writer.writeLine(`/*
 Copyright (c) 2016-2020 Rory Claasen
 The MIT License (MIT)
 */`);
-        styles.forEach(style => writer.writeStyle(style));
-    } finally {
-        writer.close();
-    }
-});
+            styles.forEach((style) => writer.writeStyle(style));
+        } finally {
+            writer.close();
+        }
+    });
 
 const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[]) => {
     if (!fs.existsSync(template)) {
@@ -77,13 +75,13 @@ const writeReadme = (template: fs.PathLike, output: fs.PathLike, styles: IStyle[
         templateWriter.writeLine('');
         templateWriter.writeLine('### Preview');
         templateWriter.writeLine('');
-        styles.forEach(style => templateWriter.writeLine(`![${style.name}](http://www.placehold.it/150/${style.color.replace('#', '')}/ffffff?text=${style.className})`));
+        styles.forEach((style) => templateWriter.writeLine(`![${style.name}](http://www.placehold.it/150/${style.color.replace('#', '')}/ffffff?text=${style.className})`));
     } finally {
         templateWriter.close();
     }
 };
 
-getLanguages(new Linguist(config.languagesUrl)).then(languages => {
+getLanguages(new Linguist(config.languagesUrl)).then((languages) => {
     const distFolder = path.resolve(__dirname, '..', 'dist');
     if (!fs.existsSync(distFolder)) {
         fs.mkdirSync(distFolder);
@@ -94,9 +92,14 @@ getLanguages(new Linguist(config.languagesUrl)).then(languages => {
     const styleWriters: StyleWriter[] = [];
     styleWriters.push(new StyleWriter(path.resolve(distFolder, 'colors.less'), (style: IStyle) => `@${style.className}:${style.color};`));
     styleWriters.push(new StyleWriter(path.resolve(distFolder, 'colors.scss'), (style: IStyle) => `$${style.className}:${style.color};`));
-    styleWriters.push(new StyleWriter(path.resolve(distFolder, 'colors.min.css'), (style: IStyle) => `.gh-${style.className}{color:${style.color};}.gh-bg-${style.className}{background-color:${style.color};}`, false));
+    styleWriters.push(
+        new StyleWriter(
+            path.resolve(distFolder, 'colors.min.css'),
+            (style: IStyle) => `.gh-${style.className}{color:${style.color};}.gh-bg-${style.className}{background-color:${style.color};}`,
+            false
+        )
+    );
 
     writeStyleWrtiers(styleWriters, styles);
     writeReadme(path.resolve(__dirname, '..', 'src', 'template.md'), path.resolve(__dirname, '..', 'readme.md'), styles);
 });
-
