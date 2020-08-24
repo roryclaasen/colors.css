@@ -5,7 +5,7 @@ const namesMap: Map<string, string> = new Map([
     ['F#', 'FSharp'],
     ['F*', 'FStar'],
     ['NetLinx+ERB', 'NetLinxERB'],
-    ['Ren\'Py', 'RenPy'],
+    [`Ren'Py`, 'RenPy'],
     ['1C Enterprise', 'OneCEnterprise'],
     ['Visual Basic .NET', 'VisualBasic NET']
 ]);

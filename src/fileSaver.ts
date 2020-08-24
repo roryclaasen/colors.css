@@ -1,16 +1,18 @@
 import fs, { PathLike, WriteStream } from 'fs';
 import { EOL } from 'os';
 
-type StreamOptions = string | {
-    flags?: string;
-    encoding?: BufferEncoding;
-    fd?: number;
-    mode?: number;
-    autoClose?: boolean;
-    emitClose?: boolean;
-    start?: number;
-    highWaterMark?: number;
-};
+type StreamOptions =
+    | string
+    | {
+          flags?: string;
+          encoding?: BufferEncoding;
+          fd?: number;
+          mode?: number;
+          autoClose?: boolean;
+          emitClose?: boolean;
+          start?: number;
+          highWaterMark?: number;
+      };
 
 type Chunk = unknown;
 
