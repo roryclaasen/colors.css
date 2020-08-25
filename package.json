@@ -1,6 +1,6 @@
 {
   "name": "colors.css",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "GitHub colour codes for web development",
   "scripts": {
     "clean": "rimraf dist out",

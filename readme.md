@@ -277,6 +277,7 @@ $ npm install @roryclaasen/colors.css
 ![TI Program](http://www.placehold.it/150/A0AA87/ffffff?text=TIProgram)
 ![Turing](http://www.placehold.it/150/cf142b/ffffff?text=Turing)
 ![TypeScript](http://www.placehold.it/150/2b7489/ffffff?text=TypeScript)
+![Uno](http://www.placehold.it/150/9933cc/ffffff?text=Uno)
 ![UnrealScript](http://www.placehold.it/150/a54c4d/ffffff?text=UnrealScript)
 ![V](http://www.placehold.it/150/5d87bd/ffffff?text=V)
 ![Vala](http://www.placehold.it/150/fbe5cd/ffffff?text=Vala)
