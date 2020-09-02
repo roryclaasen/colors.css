@@ -27,15 +27,24 @@ $ npm install @roryclaasen/colors.css
 
 | Language | Css Identifier |
 |:---|:---|
-| C++ | cpp |
-| Objective-C++ | ObjectiveCpp |
-| C# | CSharp |
-| F# | FSharp |
-| F* | FStar |
-| NetLinx+ERB | NetLinxERB |
-| Ren'Py | RenPy |
 | 1C Enterprise | OneCEnterprise |
-| Visual Basic .NET | VisualBasic NET |
+| ASP.NET | ASPNET |
+| C# | CSharp |
+| C++ | Cpp |
+| F* | FStar |
+| F# | FSharp |
+| Macaulay2 | MacaulayTwo |
+| Modula-3 | ModulaThree |
+| MQL4 | MQLFour |
+| MQL5 | MQLFive |
+| NetLinx+ERB | NetLinxERB |
+| Objective-C++ | ObjectiveCpp |
+| P4 | PFour |
+| Pep8 | PepEight |
+| Q# | QSharp |
+| Ren'Py | RenPy |
+| Visual Basic .NET | VisualBasicNET |
+| X10 | XTen |
 
 ### Preview
 
@@ -55,7 +64,7 @@ $ npm install @roryclaasen/colors.css
 ![APL](http://www.placehold.it/150/5A8164/ffffff?text=APL)
 ![AppleScript](http://www.placehold.it/150/101F1F/ffffff?text=AppleScript)
 ![Arc](http://www.placehold.it/150/aa2afe/ffffff?text=Arc)
-![ASP.NET](http://www.placehold.it/150/9400ff/ffffff?text=ASP.NET)
+![ASP.NET](http://www.placehold.it/150/9400ff/ffffff?text=ASPNET)
 ![AspectJ](http://www.placehold.it/150/a957b0/ffffff?text=AspectJ)
 ![Assembly](http://www.placehold.it/150/6E4C13/ffffff?text=Assembly)
 ![Asymptote](http://www.placehold.it/150/ff0000/ffffff?text=Asymptote)
@@ -70,7 +79,7 @@ $ npm install @roryclaasen/colors.css
 ![Brainfuck](http://www.placehold.it/150/2F2530/ffffff?text=Brainfuck)
 ![C](http://www.placehold.it/150/555555/ffffff?text=C)
 ![C#](http://www.placehold.it/150/178600/ffffff?text=CSharp)
-![C++](http://www.placehold.it/150/f34b7d/ffffff?text=cpp)
+![C++](http://www.placehold.it/150/f34b7d/ffffff?text=Cpp)
 ![Ceylon](http://www.placehold.it/150/dfa535/ffffff?text=Ceylon)
 ![Chapel](http://www.placehold.it/150/8dc63f/ffffff?text=Chapel)
 ![Cirru](http://www.placehold.it/150/ccccff/ffffff?text=Cirru)
@@ -119,7 +128,7 @@ $ npm install @roryclaasen/colors.css
 ![FreeMarker](http://www.placehold.it/150/0050b2/ffffff?text=FreeMarker)
 ![Frege](http://www.placehold.it/150/00cafe/ffffff?text=Frege)
 ![Futhark](http://www.placehold.it/150/5f021f/ffffff?text=Futhark)
-![G-code](http://www.placehold.it/150/D08CF2/ffffff?text=G-code)
+![G-code](http://www.placehold.it/150/D08CF2/ffffff?text=Gcode)
 ![Game Maker Language](http://www.placehold.it/150/71b417/ffffff?text=GameMakerLanguage)
 ![GAML](http://www.placehold.it/150/FFC766/ffffff?text=GAML)
 ![GDScript](http://www.placehold.it/150/355570/ffffff?text=GDScript)
@@ -170,7 +179,7 @@ $ npm install @roryclaasen/colors.css
 ![LookML](http://www.placehold.it/150/652B81/ffffff?text=LookML)
 ![LSL](http://www.placehold.it/150/3d9970/ffffff?text=LSL)
 ![Lua](http://www.placehold.it/150/000080/ffffff?text=Lua)
-![Macaulay2](http://www.placehold.it/150/d8ffff/ffffff?text=Macaulay2)
+![Macaulay2](http://www.placehold.it/150/d8ffff/ffffff?text=MacaulayTwo)
 ![Makefile](http://www.placehold.it/150/427819/ffffff?text=Makefile)
 ![Markdown](http://www.placehold.it/150/083fa1/ffffff?text=Markdown)
 ![Marko](http://www.placehold.it/150/42bff2/ffffff?text=Marko)
@@ -185,9 +194,9 @@ $ npm install @roryclaasen/colors.css
 ![Mirah](http://www.placehold.it/150/c7a938/ffffff?text=Mirah)
 ![mIRC Script](http://www.placehold.it/150/3d57c3/ffffff?text=mIRCScript)
 ![MLIR](http://www.placehold.it/150/5EC8DB/ffffff?text=MLIR)
-![Modula-3](http://www.placehold.it/150/223388/ffffff?text=Modula-3)
-![MQL4](http://www.placehold.it/150/62A8D6/ffffff?text=MQL4)
-![MQL5](http://www.placehold.it/150/4A76B8/ffffff?text=MQL5)
+![Modula-3](http://www.placehold.it/150/223388/ffffff?text=ModulaThree)
+![MQL4](http://www.placehold.it/150/62A8D6/ffffff?text=MQLFour)
+![MQL5](http://www.placehold.it/150/4A76B8/ffffff?text=MQLFive)
 ![MTML](http://www.placehold.it/150/b7e1f4/ffffff?text=MTML)
 ![NCL](http://www.placehold.it/150/28431f/ffffff?text=NCL)
 ![Nearley](http://www.placehold.it/150/990000/ffffff?text=Nearley)
@@ -202,9 +211,9 @@ $ npm install @roryclaasen/colors.css
 ![Nit](http://www.placehold.it/150/009917/ffffff?text=Nit)
 ![Nix](http://www.placehold.it/150/7e7eff/ffffff?text=Nix)
 ![Nu](http://www.placehold.it/150/c9df40/ffffff?text=Nu)
-![Objective-C](http://www.placehold.it/150/438eff/ffffff?text=Objective-C)
+![Objective-C](http://www.placehold.it/150/438eff/ffffff?text=ObjectiveC)
 ![Objective-C++](http://www.placehold.it/150/6866fb/ffffff?text=ObjectiveCpp)
-![Objective-J](http://www.placehold.it/150/ff0c5a/ffffff?text=Objective-J)
+![Objective-J](http://www.placehold.it/150/ff0c5a/ffffff?text=ObjectiveJ)
 ![ObjectScript](http://www.placehold.it/150/424893/ffffff?text=ObjectScript)
 ![OCaml](http://www.placehold.it/150/3be133/ffffff?text=OCaml)
 ![Odin](http://www.placehold.it/150/60AFFE/ffffff?text=Odin)
@@ -214,13 +223,13 @@ $ npm install @roryclaasen/colors.css
 ![OpenQASM](http://www.placehold.it/150/AA70FF/ffffff?text=OpenQASM)
 ![Oxygene](http://www.placehold.it/150/cdd0e3/ffffff?text=Oxygene)
 ![Oz](http://www.placehold.it/150/fab738/ffffff?text=Oz)
-![P4](http://www.placehold.it/150/7055b5/ffffff?text=P4)
+![P4](http://www.placehold.it/150/7055b5/ffffff?text=PFour)
 ![Pan](http://www.placehold.it/150/cc0000/ffffff?text=Pan)
 ![Papyrus](http://www.placehold.it/150/6600cc/ffffff?text=Papyrus)
 ![Parrot](http://www.placehold.it/150/f3ca0a/ffffff?text=Parrot)
 ![Pascal](http://www.placehold.it/150/E3F171/ffffff?text=Pascal)
 ![Pawn](http://www.placehold.it/150/dbb284/ffffff?text=Pawn)
-![Pep8](http://www.placehold.it/150/C76F5B/ffffff?text=Pep8)
+![Pep8](http://www.placehold.it/150/C76F5B/ffffff?text=PepEight)
 ![Perl](http://www.placehold.it/150/0298c3/ffffff?text=Perl)
 ![PHP](http://www.placehold.it/150/4F5D95/ffffff?text=PHP)
 ![PigLatin](http://www.placehold.it/150/fcd7de/ffffff?text=PigLatin)
@@ -240,7 +249,7 @@ $ npm install @roryclaasen/colors.css
 ![PureScript](http://www.placehold.it/150/1D222D/ffffff?text=PureScript)
 ![Python](http://www.placehold.it/150/3572A5/ffffff?text=Python)
 ![q](http://www.placehold.it/150/0040cd/ffffff?text=q)
-![Q#](http://www.placehold.it/150/fed659/ffffff?text=Q#)
+![Q#](http://www.placehold.it/150/fed659/ffffff?text=QSharp)
 ![QML](http://www.placehold.it/150/44a51c/ffffff?text=QML)
 ![Qt Script](http://www.placehold.it/150/00b841/ffffff?text=QtScript)
 ![Quake](http://www.placehold.it/150/882233/ffffff?text=Quake)
@@ -314,7 +323,7 @@ $ npm install @roryclaasen/colors.css
 ![WebAssembly](http://www.placehold.it/150/04133b/ffffff?text=WebAssembly)
 ![wisp](http://www.placehold.it/150/7582D1/ffffff?text=wisp)
 ![Wollok](http://www.placehold.it/150/a23738/ffffff?text=Wollok)
-![X10](http://www.placehold.it/150/4B6BEF/ffffff?text=X10)
+![X10](http://www.placehold.it/150/4B6BEF/ffffff?text=XTen)
 ![xBase](http://www.placehold.it/150/403a40/ffffff?text=xBase)
 ![XC](http://www.placehold.it/150/99DA07/ffffff?text=XC)
 ![XQuery](http://www.placehold.it/150/5232e7/ffffff?text=XQuery)
