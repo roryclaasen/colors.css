@@ -1,19 +1,33 @@
-const namesMap: Map<string, string> = new Map([
-    ['C++', 'cpp'],
-    ['Objective-C++', 'ObjectiveCpp'],
-    ['C#', 'CSharp'],
-    ['F#', 'FSharp'],
-    ['F*', 'FStar'],
-    ['NetLinx+ERB', 'NetLinxERB'],
-    [`Ren'Py`, 'RenPy'],
-    ['1C Enterprise', 'OneCEnterprise'],
-    ['Visual Basic .NET', 'VisualBasic NET']
-]);
+import numberToWords from 'number-to-words';
 
-function getClassName(key: string): string {
-    const className = namesMap.has(key) ? namesMap.get(key) : key;
-    return className.split(' ').join('');
-}
+const namesMap: Map<string, string> = new Map();
+
+const getClassName = (name: string): string => {
+    if (namesMap.has(name)) return namesMap.get(name);
+    else {
+        const basicClassName = generateBasicClassName(name);
+        const className = generateClassName(name);
+
+        if (className != basicClassName) namesMap.set(name, className);
+        return className;
+    }
+};
+
+const generateBasicClassName = (name: string): string => name.replace(/ /g, '').replace(/-/g, '');
+
+const generateClassName = (name: string): string =>
+    generateBasicClassName(name)
+        .replace(/\d+/g, (match) => {
+            const num = +match;
+            if (isNaN(num)) return '';
+            return numberToWords.toWords(num).replace(/^\w/, (c) => c.toUpperCase());
+        })
+        .replace(/[cC]\+\+/g, 'Cpp')
+        .replace(/\+/g, '')
+        .replace(/'/g, '')
+        .replace(/\./g, '')
+        .replace(/#/g, 'Sharp')
+        .replace(/\*/g, 'Star');
 
 export default namesMap;
 export { getClassName };
