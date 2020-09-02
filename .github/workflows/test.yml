@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Build Packaage and Test
+    name: Build Package and Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
