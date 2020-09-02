@@ -5,11 +5,17 @@ on:
     - cron: "0 2 * * *"
   push:
     branches:
-      - main
-    tags-ignore: ["v**"]
+      - "main"
+    tags-ignore:
+      - "**"
+    paths-ignore:
+      - ".github/**"
+      - ".vscode/**"
+      - "test/**"
 
 jobs:
   build:
+    name: Build Package
     runs-on: ubuntu-latest
     outputs:
       hasChanged: ${{ steps.changes.outputs.changed }}
@@ -38,6 +44,7 @@ jobs:
         uses: UnicornGlobal/has-changes-action@v1.0.11
 
   deploy:
+    name: Commit Version
     needs: build
     if: needs.build.outputs.hasChanged == 1
     runs-on: ubuntu-latest
