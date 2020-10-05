@@ -2,16 +2,14 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    versioning-strategy: increase-if-necessary
+    versioning-strategy: auto
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
     assignees:
       - "roryclaasen"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "monthly"
     assignees:
       - "roryclaasen"
