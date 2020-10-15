@@ -174,6 +174,7 @@ $ npm install @roryclaasen/colors.css
 ![Kaitai Struct](http://www.placehold.it/150/773b37/ffffff?text=KaitaiStruct)
 ![Kotlin](http://www.placehold.it/150/F18E33/ffffff?text=Kotlin)
 ![KRL](http://www.placehold.it/150/28430A/ffffff?text=KRL)
+![Lark](http://www.placehold.it/150/0b130f/ffffff?text=Lark)
 ![Lasso](http://www.placehold.it/150/999999/ffffff?text=Lasso)
 ![Latte](http://www.placehold.it/150/f2a542/ffffff?text=Latte)
 ![Less](http://www.placehold.it/150/1d365d/ffffff?text=Less)
