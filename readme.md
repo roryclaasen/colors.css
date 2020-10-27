@@ -219,6 +219,7 @@ $ npm install @roryclaasen/colors.css
 ![Nix](http://www.placehold.it/150/7e7eff/ffffff?text=Nix)
 ![Nu](http://www.placehold.it/150/c9df40/ffffff?text=Nu)
 ![NumPy](http://www.placehold.it/150/9C8AF9/ffffff?text=NumPy)
+![NWScript](http://www.placehold.it/150/111522/ffffff?text=NWScript)
 ![Objective-C](http://www.placehold.it/150/438eff/ffffff?text=ObjectiveC)
 ![Objective-C++](http://www.placehold.it/150/6866fb/ffffff?text=ObjectiveCpp)
 ![Objective-J](http://www.placehold.it/150/ff0c5a/ffffff?text=ObjectiveJ)
