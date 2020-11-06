@@ -272,6 +272,7 @@ $ npm install @roryclaasen/colors.css
 ![Rebol](http://www.placehold.it/150/358a5b/ffffff?text=Rebol)
 ![Red](http://www.placehold.it/150/f50000/ffffff?text=Red)
 ![Ren'Py](http://www.placehold.it/150/ff7f7f/ffffff?text=RenPy)
+![ReScript](http://www.placehold.it/150/ed5051/ffffff?text=ReScript)
 ![Ring](http://www.placehold.it/150/2D54CB/ffffff?text=Ring)
 ![Riot](http://www.placehold.it/150/A71E49/ffffff?text=Riot)
 ![Roff](http://www.placehold.it/150/ecdebe/ffffff?text=Roff)
