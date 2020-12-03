@@ -79,6 +79,7 @@ $ npm install @roryclaasen/colors.css
 ![BlitzMax](http://www.placehold.it/150/cd6400/ffffff?text=BlitzMax)
 ![Boo](http://www.placehold.it/150/d4bec1/ffffff?text=Boo)
 ![Brainfuck](http://www.placehold.it/150/2F2530/ffffff?text=Brainfuck)
+![Browserslist](http://www.placehold.it/150/ffd539/ffffff?text=Browserslist)
 ![C](http://www.placehold.it/150/555555/ffffff?text=C)
 ![C#](http://www.placehold.it/150/178600/ffffff?text=CSharp)
 ![C++](http://www.placehold.it/150/f34b7d/ffffff?text=Cpp)
