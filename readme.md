@@ -181,6 +181,7 @@ $ npm install @roryclaasen/colors.css
 ![Less](http://www.placehold.it/150/1d365d/ffffff?text=Less)
 ![Lex](http://www.placehold.it/150/DBCA00/ffffff?text=Lex)
 ![LFE](http://www.placehold.it/150/4C3023/ffffff?text=LFE)
+![Liquid](http://www.placehold.it/150/67b8de/ffffff?text=Liquid)
 ![LiveScript](http://www.placehold.it/150/499886/ffffff?text=LiveScript)
 ![LLVM](http://www.placehold.it/150/185619/ffffff?text=LLVM)
 ![LOLCODE](http://www.placehold.it/150/cc9900/ffffff?text=LOLCODE)
