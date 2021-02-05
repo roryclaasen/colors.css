@@ -31,10 +31,6 @@ jobs:
         run: npm ci
       - name: Build Package
         run: npm run start
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          path: dist/**
       - name: Test Package
         if: ${{ always() }}
         run: npm test
