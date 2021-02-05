@@ -6,6 +6,15 @@ on:
       - "v**"
 
 jobs:
+  spelling:
+    name: Check Spellings
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Check Spelling
+        uses: streetsidesoftware/cspell-action@v1.0.4
+
   test:
     name: Test before Deploy
     runs-on: ubuntu-latest
@@ -37,7 +46,7 @@ jobs:
 
   publish-gpr:
     name: Publish to Github Package Registry
-    needs: test
+    needs: [test, spelling]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -65,7 +74,7 @@ jobs:
 
   release-ghr:
     name: Upload files to ${{ github.ref }}
-    needs: test
+    needs: [test, spelling]
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
