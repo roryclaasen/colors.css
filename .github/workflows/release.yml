@@ -6,6 +6,15 @@ on:
       - "v**"
 
 jobs:
+  spelling:
+    name: Check Spellings
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Check Spelling
+        uses: streetsidesoftware/cspell-action@v1.0.4
+
   test:
     name: Test before Deploy
     runs-on: ubuntu-latest
@@ -29,10 +38,15 @@ jobs:
         run: npm run start
       - name: Test Package
         run: npm test
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: distribution
+          path: dist
 
   publish-gpr:
     name: Publish to Github Package Registry
-    needs: test
+    needs: [test, spelling]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -60,26 +74,15 @@ jobs:
 
   release-ghr:
     name: Upload files to ${{ github.ref }}
-    needs: test
+    needs: [test, spelling]
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-      - name: Use Node.js 12
-        uses: actions/setup-node@v2.1.4
+      - name: Download artifacts
+        id: download
+        uses: actions/download-artifact@v2
         with:
-          node-version: 12
-      - name: Restore Dependency Cache
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install Dependencies
-        run: npm ci
-      - name: Build Package
-        run: npm run start
+          name: distribution
+          path: dist
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -97,7 +100,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/colors.less
+          asset_path: "${{ steps.download-config.outputs.download-path }}/colors.less"
           asset_name: colors.less
           asset_content_type: text/css
       - name: Upload colors.scss
@@ -107,7 +110,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/colors.scss
+          asset_path: "${{ steps.download-config.outputs.download-path }}/colors.scss"
           asset_name: colors.scss
           asset_content_type: text/css
       - name: Upload colors.min.css
@@ -117,6 +120,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/colors.min.css
+          asset_path: "${{ steps.download-config.outputs.download-path }}/colors.min.css"
           asset_name: colors.min.css
           asset_content_type: text/css
+      - name: Upload colors.json
+        id: upload-release-asset-css
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: "${{ steps.download-config.outputs.download-path }}/colors.json"
+          asset_name: colors.json
+          asset_content_type: application/json

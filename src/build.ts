@@ -36,11 +36,19 @@ const languageToStyle = (language: Language): IStyle => {
     };
 };
 
+const styledToMap = (styles: IStyle[]) => {
+    const map: {
+        [key: string]: string;
+    } = {};
+    styles.forEach(({ color, name }: IStyle) => (map[name] = color));
+    return map;
+};
+
 const sortList = (list: Language[]) => list.sort((a, b) => a.name.localeCompare(b.name));
 
 const getLanguages = (linguist: Linguist) => linguist.get().then(transformMapToList).then(ensureHasColor).then(sortList);
 
-const writeStyleWrtiers = (styleWriters: StyleWriter[], styles: IStyle[]) =>
+const writeStyleWriters = (styleWriters: StyleWriter[], styles: IStyle[]) =>
     styleWriters.forEach((writer) => {
         try {
             writer.open({ encoding: 'utf8', flags: 'wx' }, true);
@@ -100,6 +108,13 @@ getLanguages(new Linguist(config.languagesUrl)).then((languages) => {
         )
     );
 
-    writeStyleWrtiers(styleWriters, styles);
+    writeStyleWriters(styleWriters, styles);
+    const jsonWriter = new FileSaver(path.resolve(distFolder, 'colors.json'));
+    try {
+        jsonWriter.open();
+        jsonWriter.write(JSON.stringify(styledToMap(styles)));
+    } finally {
+        jsonWriter.close();
+    }
     writeReadme(path.resolve(__dirname, '..', 'src', 'template.md'), path.resolve(__dirname, '..', 'readme.md'), styles);
 });

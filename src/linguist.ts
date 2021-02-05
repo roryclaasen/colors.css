@@ -31,6 +31,6 @@ export default class Linguist {
     }
 
     private transform(value: string): ILanguageMap {
-        return yaml.safeLoad(value) as ILanguageMap;
+        return yaml.load(value) as ILanguageMap;
     }
 }
