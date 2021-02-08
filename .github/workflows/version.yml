@@ -74,15 +74,28 @@ jobs:
         run: npm ci
       - name: Build Package
         run: npm run start
-      - name: Commit Changes
+      - name: Configure Git
         run: |
           git config --local user.email "2751799+roryclaasen@users.noreply.github.com"
           git config --local user.name "Rory Claasen [Bot]"
-          now=$(date)
+      - name: Commit readme
+        id: readme-step
+        continue-on-error: true
+        run: |
           git add readme.md
           git commit -m "Updates readme with latest changes"
+      - name: Commit Tag
+        if: ${{ steps.readme-step.outcome == 'success' }}
+        run: |
           version=$(npm version patch)
           git reset --soft HEAD~2
+          git commit -m "Updates version to $version"
+          git tag -fa $version -m $version
+      - name: Commit Tag
+        if: ${{ steps.readme-step.outcome == 'failure' }}
+        run: |
+          version=$(npm version patch)
+          git reset --soft HEAD~1
           git commit -m "Updates version to $version"
           git tag -fa $version -m $version
       - name: Push Changes
