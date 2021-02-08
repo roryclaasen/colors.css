@@ -84,14 +84,14 @@ jobs:
         run: |
           git add readme.md
           git commit -m "Updates readme with latest changes"
-      - name: Commit Tag
+      - name: Commit Tag (with updated readme)
         if: ${{ steps.readme-step.outcome == 'success' }}
         run: |
           version=$(npm version patch)
           git reset --soft HEAD~2
           git commit -m "Updates version to $version"
           git tag -fa $version -m $version
-      - name: Commit Tag
+      - name: Commit Tag (without updated readme)
         if: ${{ steps.readme-step.outcome == 'failure' }}
         run: |
           version=$(npm version patch)
