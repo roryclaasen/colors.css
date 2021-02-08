@@ -52,7 +52,7 @@ jobs:
   deploy:
     name: Commit Version
     needs: [build, spelling]
-    if: needs.build.outputs.hasChanged == 1
+    if: needs.build.outputs.hasChanged == 1 || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
