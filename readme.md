@@ -50,6 +50,7 @@ $ npm install @roryclaasen/colors.css
 
 ![1C Enterprise](http://www.placehold.it/150/814CCC/ffffff?text=OneCEnterprise)
 ![ABAP](http://www.placehold.it/150/E8274B/ffffff?text=ABAP)
+![ABAP CDS](http://www.placehold.it/150/555e25/ffffff?text=ABAPCDS)
 ![ActionScript](http://www.placehold.it/150/882B0F/ffffff?text=ActionScript)
 ![Ada](http://www.placehold.it/150/02f88c/ffffff?text=Ada)
 ![Agda](http://www.placehold.it/150/315665/ffffff?text=Agda)
