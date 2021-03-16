@@ -33,6 +33,7 @@ $ npm install @roryclaasen/colors.css
 | C++ | Cpp |
 | F* | FStar |
 | F# | FSharp |
+| Gemfile.lock | Gemfilelock |
 | Macaulay2 | MacaulayTwo |
 | Modula-3 | ModulaThree |
 | MQL4 | MQLFour |
@@ -141,6 +142,7 @@ $ npm install @roryclaasen/colors.css
 ![Game Maker Language](http://www.placehold.it/150/71b417/ffffff?text=GameMakerLanguage)
 ![GAML](http://www.placehold.it/150/FFC766/ffffff?text=GAML)
 ![GDScript](http://www.placehold.it/150/355570/ffffff?text=GDScript)
+![Gemfile.lock](http://www.placehold.it/150/701516/ffffff?text=Gemfilelock)
 ![Genie](http://www.placehold.it/150/fb855d/ffffff?text=Genie)
 ![Gherkin](http://www.placehold.it/150/5B2063/ffffff?text=Gherkin)
 ![Glyph](http://www.placehold.it/150/c1ac7f/ffffff?text=Glyph)
