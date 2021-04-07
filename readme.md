@@ -75,6 +75,7 @@ $ npm install @roryclaasen/colors.css
 ![AutoHotkey](http://www.placehold.it/150/6594b9/ffffff?text=AutoHotkey)
 ![AutoIt](http://www.placehold.it/150/1C3552/ffffff?text=AutoIt)
 ![Ballerina](http://www.placehold.it/150/FF5000/ffffff?text=Ballerina)
+![BASIC](http://www.placehold.it/150/ff0000/ffffff?text=BASIC)
 ![Batchfile](http://www.placehold.it/150/C1F12E/ffffff?text=Batchfile)
 ![Beef](http://www.placehold.it/150/a52f4e/ffffff?text=Beef)
 ![Bison](http://www.placehold.it/150/6A463F/ffffff?text=Bison)
