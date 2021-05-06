@@ -352,7 +352,7 @@ $ npm install @roryclaasen/colors.css
 ![Vim script](http://www.placehold.it/150/199f4b/ffffff?text=Vimscript)
 ![Visual Basic .NET](http://www.placehold.it/150/945db7/ffffff?text=VisualBasicNET)
 ![Volt](http://www.placehold.it/150/1F1F1F/ffffff?text=Volt)
-![Vue](http://www.placehold.it/150/2c3e50/ffffff?text=Vue)
+![Vue](http://www.placehold.it/150/41b883/ffffff?text=Vue)
 ![wdl](http://www.placehold.it/150/42f1f4/ffffff?text=wdl)
 ![WebAssembly](http://www.placehold.it/150/04133b/ffffff?text=WebAssembly)
 ![wisp](http://www.placehold.it/150/7582D1/ffffff?text=wisp)
