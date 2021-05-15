@@ -335,6 +335,7 @@ $ npm install @roryclaasen/colors.css
 ![Tcl](http://www.placehold.it/150/e4cc98/ffffff?text=Tcl)
 ![Terra](http://www.placehold.it/150/00004c/ffffff?text=Terra)
 ![TeX](http://www.placehold.it/150/3D6117/ffffff?text=TeX)
+![TextMate Properties](http://www.placehold.it/150/df66e4/ffffff?text=TextMateProperties)
 ![TI Program](http://www.placehold.it/150/A0AA87/ffffff?text=TIProgram)
 ![Turing](http://www.placehold.it/150/cf142b/ffffff?text=Turing)
 ![Twig](http://www.placehold.it/150/c1d026/ffffff?text=Twig)
