@@ -41,6 +41,7 @@ $ npm install @roryclaasen/colors.css
 | NetLinx+ERB | NetLinxERB |
 | Objective-C++ | ObjectiveCpp |
 | P4 | PFour |
+| PEG.js | PEGjs |
 | Pep8 | PepEight |
 | Q# | QSharp |
 | Ren'Py | RenPy |
@@ -75,6 +76,7 @@ $ npm install @roryclaasen/colors.css
 ![ATS](http://www.placehold.it/150/1ac620/ffffff?text=ATS)
 ![AutoHotkey](http://www.placehold.it/150/6594b9/ffffff?text=AutoHotkey)
 ![AutoIt](http://www.placehold.it/150/1C3552/ffffff?text=AutoIt)
+![Awk](http://www.placehold.it/150/c30e9b/ffffff?text=Awk)
 ![Ballerina](http://www.placehold.it/150/FF5000/ffffff?text=Ballerina)
 ![BASIC](http://www.placehold.it/150/ff0000/ffffff?text=BASIC)
 ![Batchfile](http://www.placehold.it/150/C1F12E/ffffff?text=Batchfile)
@@ -259,6 +261,7 @@ $ npm install @roryclaasen/colors.css
 ![Parrot](http://www.placehold.it/150/f3ca0a/ffffff?text=Parrot)
 ![Pascal](http://www.placehold.it/150/E3F171/ffffff?text=Pascal)
 ![Pawn](http://www.placehold.it/150/dbb284/ffffff?text=Pawn)
+![PEG.js](http://www.placehold.it/150/234d6b/ffffff?text=PEGjs)
 ![Pep8](http://www.placehold.it/150/C76F5B/ffffff?text=PepEight)
 ![Perl](http://www.placehold.it/150/0298c3/ffffff?text=Perl)
 ![PHP](http://www.placehold.it/150/4F5D95/ffffff?text=PHP)
@@ -293,6 +296,7 @@ $ npm install @roryclaasen/colors.css
 ![Rebol](http://www.placehold.it/150/358a5b/ffffff?text=Rebol)
 ![Record Jar](http://www.placehold.it/150/0673ba/ffffff?text=RecordJar)
 ![Red](http://www.placehold.it/150/f50000/ffffff?text=Red)
+![Regular Expression](http://www.placehold.it/150/009a00/ffffff?text=RegularExpression)
 ![Ren'Py](http://www.placehold.it/150/ff7f7f/ffffff?text=RenPy)
 ![ReScript](http://www.placehold.it/150/ed5051/ffffff?text=ReScript)
 ![Ring](http://www.placehold.it/150/2D54CB/ffffff?text=Ring)
