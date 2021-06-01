@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Check Spelling
         if: ${{ github.event_name != 'schedule' }}
-        uses: streetsidesoftware/cspell-action@v1.1.1
+        uses: streetsidesoftware/cspell-action@v1.1.2
 
   build:
     name: Test has Package Changed
