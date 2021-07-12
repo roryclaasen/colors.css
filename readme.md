@@ -138,6 +138,7 @@ $ npm install @roryclaasen/colors.css
 ![Fancy](http://www.placehold.it/150/7b9db4/ffffff?text=Fancy)
 ![Fantom](http://www.placehold.it/150/14253c/ffffff?text=Fantom)
 ![Faust](http://www.placehold.it/150/c37240/ffffff?text=Faust)
+![Fennel](http://www.placehold.it/150/fff3d7/ffffff?text=Fennel)
 ![Fluent](http://www.placehold.it/150/ffcc33/ffffff?text=Fluent)
 ![FLUX](http://www.placehold.it/150/88ccff/ffffff?text=FLUX)
 ![Forth](http://www.placehold.it/150/341708/ffffff?text=Forth)
