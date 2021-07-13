@@ -25,7 +25,7 @@ const generateClassName = (name: string): string =>
         .replace(/[cC]\+\+/g, 'Cpp')
         .replace(/\+/g, '')
         .replace(/'/g, '')
-        .replace(/\./g, 'dot')
+        .replace(/\./g, 'Dot')
         .replace(/#/g, 'Sharp')
         .replace(/\*/g, 'Star');
 
