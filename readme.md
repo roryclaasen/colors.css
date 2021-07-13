@@ -28,12 +28,12 @@ $ npm install @roryclaasen/colors.css
 | Language | Css Identifier |
 |:---|:---|
 | 1C Enterprise | OneCEnterprise |
-| ASP.NET | ASPNET |
+| ASP.NET | ASPdotNET |
 | C# | CSharp |
 | C++ | Cpp |
 | F* | FStar |
 | F# | FSharp |
-| Gemfile.lock | Gemfilelock |
+| Gemfile.lock | Gemfiledotlock |
 | Macaulay2 | MacaulayTwo |
 | Modula-3 | ModulaThree |
 | MQL4 | MQLFour |
@@ -41,11 +41,11 @@ $ npm install @roryclaasen/colors.css
 | NetLinx+ERB | NetLinxERB |
 | Objective-C++ | ObjectiveCpp |
 | P4 | PFour |
-| PEG.js | PEGjs |
+| PEG.js | PEGdotjs |
 | Pep8 | PepEight |
 | Q# | QSharp |
 | Ren'Py | RenPy |
-| Visual Basic .NET | VisualBasicNET |
+| Visual Basic .NET | VisualBasicdotNET |
 | X10 | XTen |
 
 ### Preview
@@ -69,7 +69,7 @@ $ npm install @roryclaasen/colors.css
 ![Apollo Guidance Computer](http://www.placehold.it/150/0B3D91/ffffff?text=ApolloGuidanceComputer)
 ![AppleScript](http://www.placehold.it/150/101F1F/ffffff?text=AppleScript)
 ![Arc](http://www.placehold.it/150/aa2afe/ffffff?text=Arc)
-![ASP.NET](http://www.placehold.it/150/9400ff/ffffff?text=ASPNET)
+![ASP.NET](http://www.placehold.it/150/9400ff/ffffff?text=ASPdotNET)
 ![AspectJ](http://www.placehold.it/150/a957b0/ffffff?text=AspectJ)
 ![Assembly](http://www.placehold.it/150/6E4C13/ffffff?text=Assembly)
 ![Asymptote](http://www.placehold.it/150/ff0000/ffffff?text=Asymptote)
@@ -151,7 +151,7 @@ $ npm install @roryclaasen/colors.css
 ![Game Maker Language](http://www.placehold.it/150/71b417/ffffff?text=GameMakerLanguage)
 ![GAML](http://www.placehold.it/150/FFC766/ffffff?text=GAML)
 ![GDScript](http://www.placehold.it/150/355570/ffffff?text=GDScript)
-![Gemfile.lock](http://www.placehold.it/150/701516/ffffff?text=Gemfilelock)
+![Gemfile.lock](http://www.placehold.it/150/701516/ffffff?text=Gemfiledotlock)
 ![Genie](http://www.placehold.it/150/fb855d/ffffff?text=Genie)
 ![Gherkin](http://www.placehold.it/150/5B2063/ffffff?text=Gherkin)
 ![Glyph](http://www.placehold.it/150/c1ac7f/ffffff?text=Glyph)
@@ -263,7 +263,7 @@ $ npm install @roryclaasen/colors.css
 ![Parrot](http://www.placehold.it/150/f3ca0a/ffffff?text=Parrot)
 ![Pascal](http://www.placehold.it/150/E3F171/ffffff?text=Pascal)
 ![Pawn](http://www.placehold.it/150/dbb284/ffffff?text=Pawn)
-![PEG.js](http://www.placehold.it/150/234d6b/ffffff?text=PEGjs)
+![PEG.js](http://www.placehold.it/150/234d6b/ffffff?text=PEGdotjs)
 ![Pep8](http://www.placehold.it/150/C76F5B/ffffff?text=PepEight)
 ![Perl](http://www.placehold.it/150/0298c3/ffffff?text=Perl)
 ![PHP](http://www.placehold.it/150/4F5D95/ffffff?text=PHP)
@@ -360,7 +360,7 @@ $ npm install @roryclaasen/colors.css
 ![Verilog](http://www.placehold.it/150/b2b7f8/ffffff?text=Verilog)
 ![VHDL](http://www.placehold.it/150/adb2cb/ffffff?text=VHDL)
 ![Vim script](http://www.placehold.it/150/199f4b/ffffff?text=Vimscript)
-![Visual Basic .NET](http://www.placehold.it/150/945db7/ffffff?text=VisualBasicNET)
+![Visual Basic .NET](http://www.placehold.it/150/945db7/ffffff?text=VisualBasicdotNET)
 ![Volt](http://www.placehold.it/150/1F1F1F/ffffff?text=Volt)
 ![Vue](http://www.placehold.it/150/41b883/ffffff?text=Vue)
 ![wdl](http://www.placehold.it/150/42f1f4/ffffff?text=wdl)
