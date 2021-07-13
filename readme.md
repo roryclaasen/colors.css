@@ -186,6 +186,7 @@ $ npm install @roryclaasen/colors.css
 ![Jinja](http://www.placehold.it/150/a52a22/ffffff?text=Jinja)
 ![Jolie](http://www.placehold.it/150/843179/ffffff?text=Jolie)
 ![jq](http://www.placehold.it/150/c7254e/ffffff?text=jq)
+![JSON](http://www.placehold.it/150/292929/ffffff?text=JSON)
 ![JSONiq](http://www.placehold.it/150/40d47e/ffffff?text=JSONiq)
 ![Jsonnet](http://www.placehold.it/150/0064bd/ffffff?text=Jsonnet)
 ![Julia](http://www.placehold.it/150/a270ba/ffffff?text=Julia)
