@@ -2,20 +2,10 @@
   "version": "0.1",
   "language": "en",
   "dictionaries": ["en-gb", "softwareTerms", "typescript", "node", "generalTerms"],
-  "dictionaryDefinitions": [
-    { "name": "generalTerms", "path": "./.cspell/generalTerms.txt" }
-  ],
+  "dictionaryDefinitions": [{ "name": "generalTerms", "path": "./.cspell/generalTerms.txt" }],
   "words": [],
   "ignoreWords": ["streetsidesoftware", "lcov"],
   "ignoreRegExpList": [],
-  "ignorePaths": [
-    "node_modules/**",
-    "**/package-lock.json",
-    "dist",
-    "out",
-    ".vscode/**",
-    ".cspell/**",
-    "readme.md"
-  ],
+  "ignorePaths": [".git/**", ".vscode/**", ".*ignore", ".gitattributes", "node_modules/**", "package-lock.json", "dist/**", "out/**", ".vscode/**", ".cspell/**", "readme.md"],
   "flagWords": []
 }

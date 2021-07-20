@@ -1,6 +1,5 @@
 {
   "recommendations":[
-    "fknop.vscode-npm",
     "dbaeumer.vscode-eslint",
     "mike-co.import-sorter",
     "esbenp.prettier-vscode",

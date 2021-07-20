@@ -1,9 +1,7 @@
 {
-  "typescript.implementationsCodeLens.enabled": false,
-  "typescript.referencesCodeLens.enabled": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 320,
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 180,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
