@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Check Spelling
-        uses: streetsidesoftware/cspell-action@v1.2.0
+        uses: streetsidesoftware/cspell-action@v1.2.5
 
   build:
     name: Build Package and Test
@@ -27,16 +27,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v2.2.0
         with:
-          node-version: 12
-      - name: Restore Dependency Cache
-        uses: actions/cache@v2.1.6
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 14
+          cache: "npm"
       - name: Install Dependencies
         run: npm ci
       - name: Build Package
@@ -52,16 +46,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v2.2.0
         with:
-          node-version: 12
-      - name: Restore Dependency Cache
-        uses: actions/cache@v2.1.6
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 14
+          cache: "npm"
       - name: Install Dependencies
         run: npm ci
       - name: Lint Package
