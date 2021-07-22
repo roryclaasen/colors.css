@@ -113,6 +113,7 @@ $ npm install @roryclaasen/colors.css
 ![CSS](http://www.placehold.it/150/563d7c/ffffff?text=CSS)
 ![Cuda](http://www.placehold.it/150/3A4E3A/ffffff?text=Cuda)
 ![CUE](http://www.placehold.it/150/5886E1/ffffff?text=CUE)
+![Cython](http://www.placehold.it/150/fedf5b/ffffff?text=Cython)
 ![D](http://www.placehold.it/150/ba595e/ffffff?text=D)
 ![Dafny](http://www.placehold.it/150/FFEC25/ffffff?text=Dafny)
 ![Dart](http://www.placehold.it/150/00B4AB/ffffff?text=Dart)
