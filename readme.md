@@ -163,7 +163,7 @@ $ npm install @roryclaasen/colors.css
 ![Gosu](http://www.placehold.it/150/82937f/ffffff?text=Gosu)
 ![Grammatical Framework](http://www.placehold.it/150/ff0000/ffffff?text=GrammaticalFramework)
 ![GraphQL](http://www.placehold.it/150/e10098/ffffff?text=GraphQL)
-![Groovy](http://www.placehold.it/150/e69f56/ffffff?text=Groovy)
+![Groovy](http://www.placehold.it/150/4298b8/ffffff?text=Groovy)
 ![Hack](http://www.placehold.it/150/878787/ffffff?text=Hack)
 ![Haml](http://www.placehold.it/150/ece2a9/ffffff?text=Haml)
 ![Handlebars](http://www.placehold.it/150/f7931e/ffffff?text=Handlebars)
