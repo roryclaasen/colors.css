@@ -53,7 +53,7 @@ const writeStyleWriters = (styleWriters: StyleWriter[], styles: IStyle[]) =>
         try {
             writer.open({ encoding: 'utf8', flags: 'wx' }, true);
             writer.writeLine(`/*
-Copyright (c) 2016-2020 Rory Claasen
+Copyright (c) 2016-2021 Rory Claasen
 The MIT License (MIT)
 */`);
             styles.forEach((style) => writer.writeStyle(style));
