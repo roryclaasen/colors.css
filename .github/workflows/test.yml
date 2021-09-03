@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Check Spelling
-        uses: streetsidesoftware/cspell-action@v1.2.5
+        uses: streetsidesoftware/cspell-action@v1.3.1
 
   build:
     name: Build Package and Test
