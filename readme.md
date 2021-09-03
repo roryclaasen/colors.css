@@ -222,6 +222,8 @@ $ npm install @roryclaasen/colors.css
 ![Glyph](http://www.placehold.it/150/c1ac7f/ffffff?text=Glyph)
 ![Gnuplot](http://www.placehold.it/150/f0a9f0/ffffff?text=Gnuplot)
 ![Go](http://www.placehold.it/150/00ADD8/ffffff?text=Go)
+![Go Checksums](http://www.placehold.it/150/00ADD8/ffffff?text=GoChecksums)
+![Go Module](http://www.placehold.it/150/00ADD8/ffffff?text=GoModule)
 ![Golo](http://www.placehold.it/150/88562A/ffffff?text=Golo)
 ![Gosu](http://www.placehold.it/150/82937f/ffffff?text=Gosu)
 ![Grace](http://www.placehold.it/150/615f8b/ffffff?text=Grace)
