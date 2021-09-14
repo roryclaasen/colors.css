@@ -271,6 +271,7 @@ $ npm install @roryclaasen/colors.css
 ![Java Server Pages](http://www.placehold.it/150/2A6277/ffffff?text=JavaServerPages)
 ![JavaScript](http://www.placehold.it/150/f1e05a/ffffff?text=JavaScript)
 ![JavaScript+ERB](http://www.placehold.it/150/f1e05a/ffffff?text=JavaScriptERB)
+![Jest Snapshot](http://www.placehold.it/150/15c213/ffffff?text=JestSnapshot)
 ![JFlex](http://www.placehold.it/150/DBCA00/ffffff?text=JFlex)
 ![Jinja](http://www.placehold.it/150/a52a22/ffffff?text=Jinja)
 ![Jison](http://www.placehold.it/150/56b3cb/ffffff?text=Jison)
