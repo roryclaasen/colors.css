@@ -75,7 +75,13 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: Release ${{ github.ref }}
-          body_path: ./README.md
-          files: ${{ steps.download.outputs.download-path }}/*
+          files: |
+            ${{ steps.download.outputs.download-path }}/colors.min.css
+            ${{ steps.download.outputs.download-path }}/colors.less
+            ${{ steps.download.outputs.download-path }}/colors.scss
+            ${{ steps.download.outputs.download-path }}/colors.json
+            ${{ steps.download.outputs.download-path }}/colors.ts
+            ${{ steps.download.outputs.download-path }}/colors.js
+            ${{ steps.download.outputs.download-path }}/colors.d.ts
           draft: false
           prerelease: false
