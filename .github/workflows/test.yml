@@ -18,7 +18,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Check Spelling
-        uses: streetsidesoftware/cspell-action@v1.3.1
+        uses: streetsidesoftware/cspell-action@v1.3.2
 
   build:
     name: Build Package and Test
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.4.1
         with:
           node-version: 14
           cache: "npm"
@@ -46,7 +46,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Use Node.js 12
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.4.1
         with:
           node-version: 14
           cache: "npm"
