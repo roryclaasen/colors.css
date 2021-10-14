@@ -6,6 +6,6 @@
   "words": [],
   "ignoreWords": ["streetsidesoftware", "lcov"],
   "ignoreRegExpList": [],
-  "ignorePaths": [".git/**", ".vscode/**", ".*ignore", ".gitattributes", "node_modules/**", "package-lock.json", "dist/**", "out/**", ".vscode/**", ".cspell/**", "readme.md"],
+  "ignorePaths": [".git/**", ".vscode/**", ".*ignore", ".gitattributes", "node_modules/**", "package-lock.json", "dist/**", "out/**", ".vscode/**", ".cspell/**", "readme.md", ".editorconfig"],
   "flagWords": []
 }
