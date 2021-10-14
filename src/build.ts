@@ -107,6 +107,7 @@ getLanguages(new Linguist(config.languagesUrl)).then((languages) => {
             false
         )
     );
+    styleWriters.push(new StyleWriter(path.resolve(distFolder, 'colors.ts'), (style: IStyle) => `export const ${style.className} = '${style.color}';`));
 
     writeStyleWriters(styleWriters, styles);
     const jsonWriter = new FileSaver(path.resolve(distFolder, 'colors.json'));
