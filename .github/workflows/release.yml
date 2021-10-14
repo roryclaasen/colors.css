@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Check Spelling
-        uses: streetsidesoftware/cspell-action@v1.3.2
+        uses: streetsidesoftware/cspell-action@v1.3.4
 
   test:
     name: Test before Deploy
