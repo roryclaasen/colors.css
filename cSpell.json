@@ -1,11 +1,27 @@
 {
-  "version": "0.1",
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "id": "cspell-colors-config",
+  "name": "cSpell Colors.css Config",
   "language": "en",
   "dictionaries": ["en-gb", "softwareTerms", "typescript", "node", "generalTerms"],
   "dictionaryDefinitions": [{ "name": "generalTerms", "path": "./.cspell/generalTerms.txt" }],
   "words": [],
   "ignoreWords": ["streetsidesoftware", "lcov"],
   "ignoreRegExpList": [],
-  "ignorePaths": [".git/**", ".vscode/**", ".*ignore", ".gitattributes", "node_modules/**", "package-lock.json", "dist/**", "out/**", ".vscode/**", ".cspell/**", "readme.md", ".editorconfig"],
+  "ignorePaths": [
+    ".git/**",
+    ".vscode/**",
+    ".*ignore",
+    ".gitattributes",
+    "node_modules/**",
+    "package-lock.json",
+    "dist/**",
+    "out/**",
+    ".vscode/**",
+    ".cspell/**",
+    "readme.md",
+    ".editorconfig"
+  ],
   "flagWords": []
 }
