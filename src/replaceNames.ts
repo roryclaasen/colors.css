@@ -20,7 +20,10 @@ const generateClassName = (name: string): string =>
         .replace(/\d+/g, (match) => {
             const num = +match;
             if (isNaN(num)) return '';
-            return numberToWords.toWords(num).replace(/^\w/, (c) => c.toUpperCase());
+            return numberToWords
+                .toWords(num)
+                .replace(/^\w/, (c) => c.toUpperCase())
+                .replace(/-\w/g, (c) => c.replace('-', '').toUpperCase());
         })
         .replace(/[cC]\+\+/g, 'Cpp')
         .replace(/\+/g, '')
