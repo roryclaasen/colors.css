@@ -333,6 +333,7 @@ $ npm install @roryclaasen/colors.css
 ![Modula-2](http://www.placehold.it/150/10253f/ffffff?text=ModulaTwo)
 ![Modula-3](http://www.placehold.it/150/223388/ffffff?text=ModulaThree)
 ![MoonScript](http://www.placehold.it/150/ff4585/ffffff?text=MoonScript)
+![Motoko](http://www.placehold.it/150/fbb03b/ffffff?text=Motoko)
 ![Motorola 68K Assembly](http://www.placehold.it/150/005daa/ffffff?text=MotorolaSixtyEightKAssembly)
 ![MQL4](http://www.placehold.it/150/62A8D6/ffffff?text=MQLFour)
 ![MQL5](http://www.placehold.it/150/4A76B8/ffffff?text=MQLFive)
