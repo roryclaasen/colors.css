@@ -453,6 +453,7 @@ $ npm install @roryclaasen/colors.css
 ![Self](http://www.placehold.it/150/0579aa/ffffff?text=Self)
 ![ShaderLab](http://www.placehold.it/150/222c37/ffffff?text=ShaderLab)
 ![Shell](http://www.placehold.it/150/89e051/ffffff?text=Shell)
+![ShellCheck Config](http://www.placehold.it/150/cecfcb/ffffff?text=ShellCheckConfig)
 ![Shen](http://www.placehold.it/150/120F14/ffffff?text=Shen)
 ![Singularity](http://www.placehold.it/150/64E6AD/ffffff?text=Singularity)
 ![Slash](http://www.placehold.it/150/007eff/ffffff?text=Slash)
