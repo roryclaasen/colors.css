@@ -7,7 +7,7 @@
   "dictionaries": ["en-gb", "softwareTerms", "typescript", "node", "generalTerms"],
   "dictionaryDefinitions": [{ "name": "generalTerms", "path": "./.cspell/generalTerms.txt" }],
   "words": [],
-  "ignoreWords": ["streetsidesoftware", "lcov", "softprops"],
+  "ignoreWords": ["streetsidesoftware", "lcov", "softprops", "noreply"],
   "ignoreRegExpList": [],
   "ignorePaths": [
     ".git/**",
