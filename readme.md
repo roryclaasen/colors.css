@@ -527,6 +527,7 @@ $ npm install @roryclaasen/colors.css
 ![Visual Basic .NET](http://www.placehold.it/150/945db7/ffffff?text=VisualBasicDotNET)
 ![Volt](http://www.placehold.it/150/1F1F1F/ffffff?text=Volt)
 ![Vue](http://www.placehold.it/150/41b883/ffffff?text=Vue)
+![Vyper](http://www.placehold.it/150/2980b9/ffffff?text=Vyper)
 ![wdl](http://www.placehold.it/150/42f1f4/ffffff?text=wdl)
 ![Web Ontology Language](http://www.placehold.it/150/5b70bd/ffffff?text=WebOntologyLanguage)
 ![WebAssembly](http://www.placehold.it/150/04133b/ffffff?text=WebAssembly)
