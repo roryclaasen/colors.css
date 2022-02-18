@@ -165,6 +165,8 @@ $ npm install @roryclaasen/colors.css
 ![Darcs Patch](http://www.placehold.it/150/8eff23/ffffff?text=DarcsPatch)
 ![Dart](http://www.placehold.it/150/00B4AB/ffffff?text=Dart)
 ![DataWeave](http://www.placehold.it/150/003a52/ffffff?text=DataWeave)
+![Debian Package Control File](http://www.placehold.it/150/D70751/ffffff?text=DebianPackageControlFile)
+![DenizenScript](http://www.placehold.it/150/FBEE96/ffffff?text=DenizenScript)
 ![Dhall](http://www.placehold.it/150/dfafff/ffffff?text=Dhall)
 ![DirectX 3D File](http://www.placehold.it/150/aace60/ffffff?text=DirectXThreeDFile)
 ![DM](http://www.placehold.it/150/447265/ffffff?text=DM)
