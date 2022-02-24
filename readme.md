@@ -124,6 +124,7 @@ $ npm install @roryclaasen/colors.css
 ![C#](http://www.placehold.it/150/178600/ffffff?text=CSharp)
 ![C++](http://www.placehold.it/150/f34b7d/ffffff?text=Cpp)
 ![Cabal Config](http://www.placehold.it/150/483465/ffffff?text=CabalConfig)
+![Cairo](http://www.placehold.it/150/ff4a48/ffffff?text=Cairo)
 ![Cap'n Proto](http://www.placehold.it/150/c42727/ffffff?text=CapnProto)
 ![Ceylon](http://www.placehold.it/150/dfa535/ffffff?text=Ceylon)
 ![Chapel](http://www.placehold.it/150/8dc63f/ffffff?text=Chapel)
