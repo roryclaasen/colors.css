@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Check Spelling
         if: ${{ github.event_name != 'schedule' }}
         uses: streetsidesoftware/cspell-action@v1.5.1
@@ -24,14 +24,14 @@ jobs:
     name: Test has Package Changed
     runs-on: ubuntu-latest
     outputs:
-      hasChanged: ${{ steps.changes.outputs.changed }}
+      changes: ${{ steps.changes.outputs.changes }}
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use Node.js 12
-        uses: actions/setup-node@v2.5.1
+        uses: actions/setup-node@v3.1.1
         with:
-          node-version: 14
+          node-version: 16
           cache: "npm"
       - name: Install Dependencies
         run: npm ci
@@ -41,22 +41,23 @@ jobs:
         run: npm test
       - name: Set Has Changed
         id: changes
-        uses: UnicornGlobal/has-changes-action@v1.0.12
+        run: |
+          echo "::set-output name=changes::$(git ls-files --others --exclude-standard ; git diff-index --name-only --diff-filter=d HEAD ;)"
 
   deploy:
     name: Commit Version
     needs: [build, spelling]
-    if: needs.build.outputs.hasChanged == 1 || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
+    if: needs.build.outputs.changes != "" || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.WORKFLOW_TOKEN }}
       - name: Use Node.js 12
-        uses: actions/setup-node@v2.5.1
+        uses: actions/setup-node@v3.1.1
         with:
-          node-version: 14
+          node-version: 16
           cache: "npm"
       - name: Install Dependencies
         run: npm ci
