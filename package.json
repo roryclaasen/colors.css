@@ -1,6 +1,6 @@
 {
   "name": "colors.css",
-  "version": "2.2.137",
+  "version": "2.2.138",
   "description": "GitHub colour codes for web development",
   "main": "./dist/colors.js",
   "types": "./dist/colors.d.ts",
