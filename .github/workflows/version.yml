@@ -47,7 +47,7 @@ jobs:
   deploy:
     name: Commit Version
     needs: [build, spelling]
-    if: needs.build.outputs.changes != "" || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
+    if: needs.build.outputs.changes != '' || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
