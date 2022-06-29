@@ -24,7 +24,7 @@ jobs:
     name: Test has Package Changed
     runs-on: ubuntu-latest
     outputs:
-      hasChanged: ${{ steps.changes.outputs.changed }}
+      changes: ${{ steps.changes.outputs.changes }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
@@ -41,12 +41,13 @@ jobs:
         run: npm test
       - name: Set Has Changed
         id: changes
-        uses: UnicornGlobal/has-changes-action@v1.0.12
+        run: |
+          echo "::set-output name=changes::$(git ls-files --others --exclude-standard ; git diff-index --name-only --diff-filter=d HEAD ;)"
 
   deploy:
     name: Commit Version
     needs: [build, spelling]
-    if: needs.build.outputs.hasChanged == 1 || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
+    if: needs.build.outputs.changes != "" || (github.event_name != 'schedule' && contains(toJson(github.event.commits), '[force]'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
